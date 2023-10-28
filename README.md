@@ -8,6 +8,7 @@
 
 # Other
 
+* [Run C++ and C in Visual Studio Code](https://www.youtube.com/watch?v=3-9sObAg6R0)
 * [How to Run C++ in VSCode on MacOS](https://www.youtube.com/watch?v=tdAD0WZjXrM)
     - Open VSCode, we need to install two extensions:
         - 1. Extensions -> search c/c++ -> Install `C/C++ IntelliSense`, ... 
