@@ -40,7 +40,7 @@
 ## 282. Debugging C++ Programs with VSCode on Mac
 
 * select `main.cpp` -> Run -> Add Configuation -> C++ (GDB/LLDB)
-
+    - edit `launch.json`
 ```
 {
     // Use IntelliSense to learn about possible attributes.
