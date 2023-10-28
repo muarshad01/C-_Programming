@@ -15,6 +15,7 @@
     - Open VSCode, we need to install two extensions:
         - 1. Extensions -> search c/c++ -> Install `C/C++ IntelliSense`, ... 
         - 2. Extensions -> search code runner -> Install `Code Runner` (22 million downloads)
+        - 3. Extensions -> search code codelldb -> Install `CodeLLDB`
     - Make sure you have a compiler installed
         - `Terminal` -> `$ clang --version`
         ```
