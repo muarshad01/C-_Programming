@@ -15,9 +15,10 @@
     - Make sure you have a compiler installed
         - `Terminal` -> `$ clang --version`
         ```
-        Apple clang version 14.0.3 (clang-1403.0.22.14.1)
-        Target: arm64-apple-darwin22.6.0
-        Thread model: posix
-        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+            Apple clang version 14.0.3 (clang-1403.0.22.14.1)
+            Target: arm64-apple-darwin22.6.0
+            Thread model: posix
+            InstalledDir: /Library/Developer/CommandLineTools/usr/bin
         ```
+        - Otherwise, install `$ xcode-select --install`
 ***
