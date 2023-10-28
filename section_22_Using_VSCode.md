@@ -32,6 +32,9 @@
 ```
     - save with `command + s`
 
+
+* select `main.cpp` -> Terminal -> Run Build Task
+* select `main` -> right-click -> Open in Integrated Terminal
 ***
 
 ## 282. Debugging C++ Programs with VSCode on Mac
