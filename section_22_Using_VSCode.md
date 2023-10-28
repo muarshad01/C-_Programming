@@ -61,11 +61,11 @@
 }
 ```
 
-* `main.cpp` -> `Run and Debug` -> `g++ - Build and debug active file` -> click a particular codeline
-    - VARIABLES
+* `main.cpp` -> `Run and Debug` -> Breakpoint: click a particular codeline -> `g++ - Build and debug active file`
+    - `VARIABLES`
     - WATCH
     - CALL STACK
-    - BREAKPOINTS
+    - `BREAKPOINTS`
     - MODULES
     - EXCLUDED CALLERS
 
