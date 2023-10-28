@@ -12,9 +12,9 @@
 
 * Extensions -> search codelldb -> Install `CodeLLDB`
 
-* View -> Command Palette -- OR --> `shift + command + p` -> search C++ -> C/C++ Edit Configuration (UI)
-- Compiler path -> select `/usr/bin/g++`
-- C++ standard -> select c++17
+* View -> Command Palette -- OR --> `shift + command + p` -> search C++ -> `C/C++ Edit Configuration (UI)`
+    - Compiler path -> select `/usr/bin/g++`
+    - C++ standard -> select `c++17`
 
 
 * select `main.cpp` -> Terminal -> Configure Default Build Task -> select `compiler: /usr/bin/g++`
@@ -33,8 +33,8 @@
     - save with `command + s`
 
 
-* select `main.cpp` -> Terminal -> Run Build Task
-* select `main` -> right-click -> Open in Integrated Terminal
+* select `main.cpp` -> Terminal -> `Run Build Task`
+* select `main` -> right-click -> `Open in Integrated Terminal`
 ***
 
 ## 282. Debugging C++ Programs with VSCode on Mac
