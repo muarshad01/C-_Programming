@@ -76,7 +76,7 @@ We can see that `{} tasks.json` file is created. Edit and update it as follows:
 
 This will create `{} launch.json` file. Edit and update it as follows:
 
-```
+```json
 {
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
