@@ -99,12 +99,34 @@ We can see that `{} tasks.json` file is created. Edit and update it as follows:
 ```
 
 ### Step-3 (RUN the code)
-* `main.cpp` -> Terminal -> `Run Build Task`
+* `main.cpp` -> Terminal -> `Run Build Task` (`shift + command + b`)
 * `main` -> right-click `Open in Integrated Terminal`
 
 ### Step-4 (DEBUG)
 
-This will create `launch.json` file.
+* `main.cpp` -> Run -> `Add Configuation` -> `C++ (GDB/LLDB)`
+
+This will create `{} launch.json` file. Edit and update it as follows:
+
+```
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "g++ - Build and debug active file",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "cwd": "${fileDirname}",
+            "preLaunchTask": "C/C++: g++ build active file"
+        }
+    ]
+}
+```
 
 ***
 
