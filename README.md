@@ -10,7 +10,7 @@
 
 * [How to Run C++ in VSCode on MacOS](https://www.youtube.com/watch?v=tdAD0WZjXrM)
     - Open VSCode, we need to install two extensions:
-        - 1. Extensions -> search C++ -> Install `C/C++ IntelliSense`, ... 
+        - 1. Extensions -> search c/c++ -> Install `C/C++ IntelliSense`, ... 
         - 2. Extensions -> search code runner -> Install `Code Runner` (22 million downloads)
     - Make sure you have a compiler installed
         - `Terminal` -> `$ clang --version`
@@ -20,5 +20,9 @@
             Thread model: posix
             InstalledDir: /Library/Developer/CommandLineTools/usr/bin
         ```
+        - `Terminal` -> `$ gcc` / `$ g++` -> `clang: error: no input files`
         - Otherwise, install `$ xcode-select --install`
+        - Write `hell.cpp` -> Run (compiler: /usr/bin/g++)
+            - DEBUG CONSOLE
+            - TERMINAL `$ ./hello` 
 ***
