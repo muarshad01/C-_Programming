@@ -12,22 +12,22 @@
 
 * Extensions -> search codelldb -> Install `CodeLLDB`
 
-* View -> Command Palette -- OR --> `shift + command + p` -> search C++ -> `C/C++ Edit Configuration (UI)`
+* View -> `Command Palette` -- OR --> `shift + command + p` -> search C++ -> `C/C++ Edit Configuration (UI)`
     - Compiler path -> select `/usr/bin/g++`
     - C++ standard -> select `c++17`
 
 
-* select `main.cpp` -> Terminal -> Configure Default Build Task -> select `compiler: /usr/bin/g++`
+* select `main.cpp` -> Terminal -> `Configure Default Build Task` -> select `compiler: /usr/bin/g++`
     - update `tasks.json`:
-```
+```json
 "args": [
-      "-fdiagnostics-color=always",
-      "-g",
-->    "-Wall",                         # Tell the compiler to generate all warnings.
-->    "--std=c++17",
-->	  "${fileDirname}/*.cpp",
-	  "-o",
-	  "${fileDirname}/${fileBasenameNoExtension}"
+    "-fdiagnostics-color=always",
+    "-g",
+->  "-Wall",                         # Tell the compiler to generate all warnings.
+->  "--std=c++17",
+->	"${fileDirname}/*.cpp",
+    "-o",
+    "${fileDirname}/${fileBasenameNoExtension}"
 ],
 ```
     - save with `command + s`
@@ -35,13 +35,14 @@
 
 * select `main.cpp` -> Terminal -> `Run Build Task`
 * select `main` -> right-click -> `Open in Integrated Terminal`
+
 ***
 
 ## 282. Debugging C++ Programs with VSCode on Mac
 
-* select `main.cpp` -> Run -> Add Configuation -> C++ (GDB/LLDB)
+* select `main.cpp` -> Run -> Add Configuation -> `C++ (GDB/LLDB)`
     - edit `launch.json`
-```
+```json
 {
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
