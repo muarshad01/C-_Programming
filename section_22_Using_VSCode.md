@@ -74,17 +74,17 @@
 
 ## 283. Using the Course Source Code with VSCode on Mac
 
-### STEP-1 (SETUP `IntelliSense`)
-    - `main.cpp` -> View -> `Command Palette` OR `cmd + shift + p` -> search C++ -> `C/C++: Edit Configuration (UI)`
-        - Compiler path: `/usr/local/g++`
-        - C++ standard: `c++17`
+### STEP-1 (Setup `IntelliSense`)
+* `main.cpp` -> View -> `Command Palette` OR `cmd + shift + p` -> search C++ -> `C/C++: Edit Configuration (UI)`
+    - Compiler path: `/usr/local/g++`
+    - C++ standard: `c++17`
 
 We can see that `.vscode` folder is created with `{} c_cpp_properties.json` file
 
-* STEP-2 (SETUP `Default Build Task`)
-    - Terminal -> Configure Default Build Task (compiler: `/usr/bin/g++`)
+### STEP-2 (Setup `Default Build Task`)
+* Terminal -> Configure `Default Build Task` (compiler: `/usr/bin/g++`)
 
-We can see `{} tasks.json` file created. Edit and update as follows:
+We can see that `{} tasks.json` file is created. Edit and update it as follows:
 
 ```json
 "args": [
@@ -98,11 +98,13 @@ We can see `{} tasks.json` file created. Edit and update as follows:
 ],
 ```
 
-* Step-3 (RUN)
-    - `main.cpp` -> Terminal -> Run Build Task
-    - `main` -> right-click `Open in Integrated Terminal`
+### Step-3 (RUN the code)
+* `main.cpp` -> Terminal -> `Run Build Task`
+* `main` -> right-click `Open in Integrated Terminal`
 
-* Step-4 (DEBUG: `launch.json`)
+### Step-4 (DEBUG)
+
+This will create `launch.json` file.
 
 ***
 
