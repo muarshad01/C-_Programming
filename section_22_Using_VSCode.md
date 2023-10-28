@@ -74,7 +74,7 @@
 
 ## 283. Using the Course Source Code with VSCode on Mac
 
-* STEP-1 (SETUP `IntelliSense`)
+### STEP-1 (SETUP `IntelliSense`)
     - `main.cpp` -> View -> `Command Palette` OR `cmd + shift + p` -> search C++ -> `C/C++: Edit Configuration (UI)`
         - Compiler path: `/usr/local/g++`
         - C++ standard: `c++17`
