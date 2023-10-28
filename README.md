@@ -22,7 +22,7 @@
         ```
         - `Terminal` -> `$ gcc` / `$ g++` -> `clang: error: no input files`
         - Otherwise, install `$ xcode-select --install`
-        - Write `hell.cpp` -> Run (compiler: /usr/bin/g++)
+        - Write `hello.cpp` -> Run (compiler: /usr/bin/g++)
             - DEBUG CONSOLE
             - TERMINAL `$ ./hello` 
 ***
