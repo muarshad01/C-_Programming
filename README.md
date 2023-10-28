@@ -26,3 +26,7 @@
             - DEBUG CONSOLE
             - TERMINAL `$ ./hello` 
 ***
+
+```
+$ g++ --std=c++11 hello.cpp
+```
