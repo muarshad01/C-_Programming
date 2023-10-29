@@ -16,7 +16,7 @@
         - 1. Extensions -> search c/c++ -> Install `C/C++ IntelliSense` 
         - 2. Extensions -> search code codelldb -> Install `CodeLLDB`
 
-* Make sure you have a compiler installed
+### Check if compiler is installed
 ```        
 $ clang --version
 ```
@@ -33,7 +33,7 @@ $ gcc -> clang: error: no input files
 $ g++ -> clang: error: no input files
 ```
 
-Otherwise, install `$ xcode-select --install` 
+Otherwise, install using: `$ xcode-select --install` 
 
 ***
 
