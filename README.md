@@ -4,11 +4,12 @@
 
 # Sections
 
+## PART-1
+
 * [Section 02: Installation and Setup](https://github.com/muarshad01/CPP_Programming/blob/main/section_02_installation_and_setup.md) -- 09/27/2023
 * [Section 04: Getting Started](https://github.com/muarshad01/CPP_Programming/blob/main/section_04_getting_started.md) -- 09/28/2023
-* [Section 22: Using VSCode](https://github.com/muarshad01/CPP_Programming/blob/main/section_22_Using_VSCode.md) -- 09/28/2023
 
----
+## PART-2
 
 * [Section 13: OOP - Classes and Objects]()
 * [Section 14: Operator Overloading]()
@@ -16,15 +17,14 @@
 * [Section 16: Polymorphism]()
 * [Section 17: Smart Pointers]()
 
----
+## PART-3
 
 * [Section 18: Exception Handling]()
 * [Section 19: I/O and Streams]()
 * [Section 20: The Standard Template Library (STL)]()
 * [Section 21: Lambda Expressions]()
-* [Section 22: VSCode]
+* [Section 22: Using VSCode](https://github.com/muarshad01/CPP_Programming/blob/main/section_22_Using_VSCode.md) -- 09/28/2023
 * [Section 23: Enumerations]
-
 
 ***
 
