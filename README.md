@@ -4,8 +4,8 @@
 # Sections
 
 * [Section 02: Installation and Setup](https://github.com/muarshad01/CPP_Programming/blob/main/section_02_installation_and_setup.md) -- 09/27/2023
+* [Section 04: Getting Started](https://github.com/muarshad01/CPP_Programming/blob/main/section_04_getting_started.md) -- 09/28/2023
 * [Section 22: Using VSCode](https://github.com/muarshad01/CPP_Programming/blob/main/section_22_Using_VSCode.md) -- 09/28/2023
-
 ***
 
 ## `VSCode` Extensions for `C++`
