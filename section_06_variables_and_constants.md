@@ -1,12 +1,29 @@
 ## 43. Section Overview
 
+* What are constant?
+* Declaring constants
+* Literal constants
+* Constant expressions
+
 ***
 
 ## 44. What is a variable?
 
+A variable is an abstraction for a memory location
+
 ***
 
 ## 45. Declaring and Initializing Variables
+
+```c++
+int age;
+
+int age = 21;       // C-like initialization
+
+int age = (21)      // Constructor initialization
+
+--> int age = {21}  // C++11 list initialization style
+```
 
 ***
 
