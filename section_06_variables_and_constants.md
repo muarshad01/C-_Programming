@@ -42,19 +42,19 @@ int age = (21)      // Constructor initialization
 char
 char16_t
 char32_t
- wchar_t
+wchar_t
 ```
 
 ### Integer Types
 ```c++
-signed short     int
-signed           int
-signed long      int
+signed short int
+signed int
+signed long int
 signed long long int
 
-unsigned short     int
-unsigned           int
-unsigned long      int
+unsigned short int
+unsigned int
+unsigned long int
 unsigned long long int
 ```
 
