@@ -66,7 +66,12 @@ long double
 ```
 ***
 
-## 48. What is the Size of a Variable(`sizeof`)
+## 48. What is the Size of a Variable(`sizeof` operator)
+
+* `sizeof(int)`
+* `sizeof(double)`
+* `sizeof(some_variable)`
+* `sizeof some_variable`
 
 ***
 
