@@ -86,7 +86,7 @@ We can see that `.vscode` folder is created with `{} c_cpp_properties.json` file
 
 ### STEP-2 (Setup `Default Build Task`)
 
-* Terminal -> Configure `Default Build Task` (compiler: `/usr/bin/g++`)
+* Terminal -> `Configure Default Build Task` (compiler: `/usr/bin/g++`)
 
 We can see that `{} tasks.json` file is created. Edit and update it as follows:
 
@@ -132,5 +132,7 @@ This will create `{} launch.json` file. Edit and update it as follows:
     ]
 }
 ```
+* `main.cpp` -> Run and Debug -> select and click on a particular line # 
+-> click `g++ - Build and debug active file` -> step-over - > STOP
 
 ***
