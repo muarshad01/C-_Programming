@@ -95,6 +95,23 @@ int main(int argc, char *argv[]){
 
 ## 41. Namespaces
 
+* Code is combination of three things:
+    - 1. Our own code + 
+    - 2. C++ std libraries and their code + 
+    - 3. Libraries from third-party developers and their code.
+* We can run into `naming conflict`.
+* C++ allow developers to use `namespaces as containers` to `group code entities into a namespace scope`.
+
+```c++
+using namespace std;            # using namespace directive
+```
+
+```c++
+using std::cout;                # qualified using namespace variant
+using std::cin;
+using std::endl;
+```
+
 ***
 
 ## 42. Basic Input and Output (I/O) using `cin` and `cout`
