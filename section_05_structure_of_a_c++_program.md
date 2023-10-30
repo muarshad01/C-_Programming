@@ -1,5 +1,12 @@
 ## 36. Section Overview
 
+* Basic Components
+* Preprocessor Directive
+* The `main()` function
+* Namespaces
+* Comments
+* Basic I/O
+
 ***
 
 ## 37. Overview of the Structure of a C++ Program
