@@ -116,6 +116,8 @@ using std::endl;
 
 ## 42. Basic Input and Output (I/O) using `cin` and `cout`
 
+* `cout`, `cin`, `cerr`, `clog`
+
 ### Exercise 1
 
 ### Exercise 2
