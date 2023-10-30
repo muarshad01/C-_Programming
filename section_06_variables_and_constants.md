@@ -29,6 +29,8 @@ int age = (21)      // Constructor initialization
 
 ## 46. Global Variables
 
+* Global variables are automatically initialized to `zero`.
+
 ***
 
 ## 47. C++ Built-in Primitive Types
