@@ -34,6 +34,36 @@
 
 ## 38. `#include` Preprocessor Directive 
 
+* Preprocessor:
+    - A program that processes your source-code before the compiler sees it.
+
+- The C++ pre-processor first strips all the comments from the source file and replaces each comment with a single space. Then it looks for pre-processor directives and executes them.
+- Pre-processor directives are lines in the source code that being with a pound(`#`).
+- Commonly used to conditionally-compile source code.
+
+```c++
+#include
+```
+
+```c++
+#if
+#elif
+#else
+#endif
+```
+
+```c++
+#ifdef
+#ifndef
+#define
+#undef
+```
+
+```c++
+#line
+#error
+#pragma
+```
 ***
 
 ## 39. Comments
