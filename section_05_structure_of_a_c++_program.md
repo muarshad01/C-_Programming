@@ -71,6 +71,26 @@
 
 ## 40. The `main()` function
 
+```c++
+int main(){
+    // code
+    
+    return 0;
+}
+```
+
+OR
+
+```c++
+int main(int argc, char *argv[]){
+    // code
+
+    return 0;
+}
+```
+
+* `argc` - argument count
+* `argv` - argument value
 ***
 
 ## 41. Namespaces
