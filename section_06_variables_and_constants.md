@@ -35,6 +35,35 @@ int age = (21)      // Constructor initialization
 
 ## 47. C++ Built-in Primitive Types
 
+* Size and precision is often compiler-dependent.
+
+### Character Types
+```c++
+char
+char16_6
+char32_t
+wchar_t
+```
+
+### Integer Types
+```c++
+signed short     int
+signed           int
+signed long      int
+signed long long int
+---
+unsigned short     int
+unsigned           int
+unsigned long      int
+unsigned long long int
+```
+
+### Floating-point Type
+```c++
+float
+double
+long double
+```
 ***
 
 ## 48. What is the Size of a Variable(`sizeof`)
