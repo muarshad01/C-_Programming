@@ -47,7 +47,7 @@ wchar_t
 
 ### Integer Types
 ```c++
-signed short int
+signed short int            #`signed short` OR just `short` i.e., need not put `int`
 signed int
 signed long int
 signed long long int
