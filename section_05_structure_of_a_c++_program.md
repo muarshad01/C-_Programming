@@ -22,12 +22,14 @@
 * E.g., `int` and `return` are keywords.
 
 * There is difference b/w `identifier` and `keywords`.
+* Identifiers:
+    - `include`, `std`, `cout`, `cin`, `endl` are identifiers.
+    - An identifier is something that a programmer names. These names have been created by programmers to create something that represents something meaningful to them.
 
-* `<<` - stream insertion operator
-
-* `>>` - stream extraction operator
-
-* `::` - scope resolution operator
+* Non-standard Operators(`<<`, `>>`, `::`) vs Standard Operators(`+`, `x`,`-`, `/`):
+    - `<<` - stream insertion operator
+    - `>>` - stream extraction operator
+    - `::` - scope resolution operator
 ***
 
 ## 38. `#include` Preprocessor Directive 
