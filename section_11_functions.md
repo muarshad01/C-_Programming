@@ -42,7 +42,7 @@ for(size_t i{1}; i<=count; ++i){
 
 * Use function prototypes
     - Tell the compiler what it needs to know without a full function definition
-    - Also called forward declarations
+    - Also called `forward declarations`
     - Placed at the beginning of the program
     - Also used in our own head files(`.h`) - more about this later
 
