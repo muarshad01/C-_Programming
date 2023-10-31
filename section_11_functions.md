@@ -4,6 +4,17 @@
 
 ## 102. What is a Function?
 
+* Modularization of program.
+    - More modular, more readable, more maintainable
+    - Information hiding
+    - Abstraction
+
+* `<cmath>`
+    - [Standard library header <cmath>](https://en.cppreference.com/w/cpp/header/cmath)
+* `<cstdlib>`
+    - [Standard library header <cstdlib>](https://en.cppreference.com/w/cpp/header/cstdlib)
+* [C++ Standard Library headers](https://en.cppreference.com/w/cpp/header)
+
 ***
 
 ## 103. Function Definition
