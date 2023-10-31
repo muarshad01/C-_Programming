@@ -68,11 +68,31 @@ long double
 
 ## 48. What is the Size of a Variable(`sizeof` operator)
 
+* `sizeof(char)`
+
+* `sizeof(short)`
 * `sizeof(int)`
+* `sizeof(long)`
+* `sizeof(long long)`
+
+* `sizeof(float)`
 * `sizeof(double)`
+* `sizeof(long double)`
+
+* `sizeof(unsigned int)`
+
 * `sizeof(some_variable)`
 * `sizeof some_variable`
 
+* `<climits>`
+    -  CHAR_MIN / CHAR_MAX
+    -  SHRT_MIN / SHRT_MAX
+    -   INT_MIN / INT_MAX
+    -  LONG_MIN / LONG_MAX
+    - LLONG_MIN / LLONG_MAX
+
+* `<cfloat>`
+    - FLT_MIN / FLT_MAX
 ***
 
 ## 49. What is a Constant?
