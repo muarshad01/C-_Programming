@@ -132,7 +132,8 @@ This will create `{} launch.json` file. Edit and update it as follows:
     ]
 }
 ```
-* `main.cpp` -> Run and Debug -> select and click on a particular line # 
--> click `g++ - Build and debug active file` -> step-over - > STOP
+
+* `main.cpp` -> Launch `Run and Debug` -> Click on a particular code-line # 
+-> Run `g++ - Build and debug active file` -> step-over -> STOP
 
 ***
