@@ -9,12 +9,27 @@
     - Information hiding
     - Abstraction
 
-* `<cmath>`
-    - [Standard library header <cmath>](https://en.cppreference.com/w/cpp/header/cmath)
-* `<cstdlib>`
-    - [Standard library header <cstdlib>](https://en.cppreference.com/w/cpp/header/cstdlib)
 * [C++ Standard Library headers](https://en.cppreference.com/w/cpp/header)
 
+* `<cmath>`
+    - [Standard library header <cmath>](https://en.cppreference.com/w/cpp/header/cmath)
+
+* `<cstdlib>`
+    - [Standard library header <cstdlib>](https://en.cppreference.com/w/cpp/header/cstdlib)
+
+```c++
+size_t count {10};
+int min {1};
+int max {6};
+
+srand(time(nullptr))
+
+for(size_t i{1}; i<=count; ++i){
+    random_number = rand() % max + min;
+    cout << random_number << endl;
+}
+
+```
 ***
 
 ## 103. Function Definition
