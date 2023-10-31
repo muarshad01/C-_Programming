@@ -92,8 +92,19 @@ void print_vector(vector<string> v) {
 
 ***
 
-*** 106. Default Argument Values
+## 106. Default Argument Values
 
+* Default values can be in the prototype or definition, not both
+    - best practice - in the prototype
+    - must appear at the tail end of the parameter list
+* Can have multiple default values
+    - must appear consecutively at the tail end of the parameter list
+
+```c++
+#include <iomanip>
+
+cout << fixed << setprecision(2)
+```
 ***
 
 ## 107. Overloading Functions
