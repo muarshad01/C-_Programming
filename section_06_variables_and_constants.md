@@ -101,6 +101,24 @@ long double
 
 ## 50. Declaring and Using Constants
 
+* Literal constants
+* Declared constants (`const` keyword)
+* Constant expressions(`constexpr` keyword)
+* Enumerated constants (`enum` keyword)
+* Defined constants (`#define`)
+
+### Integer Literal Constants
+* 12   - an integer
+* 12U  - an unsigned integer
+* 12L  - a long integer
+* 12LL - a long long integer
+
+### Floating-point Literal Constants
+* 12.1  - a double
+* 12.1F - a float
+* 12.1L - a long double
+
+### Character Literal Constants
 ***
 
 ## 51. Section Challenge
