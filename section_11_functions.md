@@ -118,6 +118,8 @@ cout << fixed << setprecision(2)
 
 ## 108. Passing Arrays to Functions
 
+* Since the `array name` evaluates to the `location of the first element` of array in memory - this address is what is copies
+* So the function has no idea how many elements are in the array since all it know sit the `location of the first element` (`the name of the array`)
 ***
 
 ## 109. Pass by Reference
