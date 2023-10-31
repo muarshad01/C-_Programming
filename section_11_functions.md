@@ -50,6 +50,46 @@ for(size_t i{1}; i<=count; ++i){
 
 ## 105. Function Parameters and the return Statement
 
+* function call - `arguments`
+* function definition - `parameters`
+
+### pass-by-value
+
+* When you pass data into a function it is passed-by-value
+* A copy of the data is passed to the function
+* Whatever changes you make to the parameter (formal parameter) in the function doesn't affect the argument that was passed in.
+
+* Formal parameter
+    - The parameters defined in the function header
+* Actual parameter
+    - The parameters used in the function call, the arguments
+    - In c++, the actual parameters are passed-by-value or copied to formal parameters
+
+```c++
+void param_test(int formal){    // formal is a copy of actual
+    cout << formal << endl;     // 50    
+    formal = 100;               // only change the local copy
+    cout << formal << endl;     // 100
+}
+
+int main(){
+    int actual {50};            
+    cout << actual << endl;     // 50
+    param_test(actual);         // pass in 50 to param_test
+    cout << actual << endl;     // 50 - didn't change
+    return 0; 
+}
+```
+
+```c++
+void print_vector(vector<string> v) {
+    for(auto s: v) {
+        cout << s << " ";
+    }
+    cout << endl;
+}
+```
+
 ***
 
 *** 106. Default Argument Values
