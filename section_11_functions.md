@@ -34,6 +34,8 @@ for(size_t i{1}; i<=count; ++i){
 
 ## 103. Function Definition
 
+* called BEFORE it is defined ERROR
+
 ***
 
 ## 104. Function Prototypes
