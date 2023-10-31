@@ -111,8 +111,8 @@ cout << fixed << setprecision(2)
 
 * We can have function that have different parameter lists that have the same name
 * Abstraction mechanism since we can just think `print` for example
-* A type of polymorphism
-    - We can have the same function name work with different data types to execute similar behavior
+* A type of `polymorphism`
+    - We can have the `same-function-name` work with `different-data-types` to execute similar behavior
 * The compiler must be able to tell the functions apart based on the parameter lists and argument supplied 
 ***
 
