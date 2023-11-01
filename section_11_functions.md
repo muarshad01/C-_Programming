@@ -178,6 +178,19 @@ static int value {10};
 * Global constants are OK
 * Best practice - don't use global variables
 
+```c++
+void local_example(int x){
+    int num {1000};
+    cout << "\nLocal num is" << num << endl;
+    num = x;
+    cout << "\nLocal num is" << num << endl;
+}
+
+local_example(10);
+local_example(20);
+```
+* Everytime we call `local_example()` function the local variable `num` is initialized to `1000`.
+
 ***
 
 ## 111. How do Function Calls Work?
