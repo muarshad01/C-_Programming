@@ -74,7 +74,7 @@ string *p5 {nullptr};
 
 ## 120. Dereferencing a Pointer
 
-* Access the date we're pointing to - dereferencing a pointer
+* Access the data we're pointing to - dereferencing a pointer
 
 * You can access the data at the address contained in the `score_ptr` using the dereferencing operator (`*`)
 
