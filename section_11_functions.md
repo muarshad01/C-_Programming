@@ -229,6 +229,18 @@ static_local_example();
 
 ## 112. Inline Functions
 
+```c++
+incline int add_numbers(int a, int b) {     // Note keyword `inline`
+    return a + b
+}
+
+int main() {
+    int result {0};
+    result = add_numbers(100, 200);
+    return 0;
+}
+```
+
 ***
 
 ## 113. Recursive Functions
