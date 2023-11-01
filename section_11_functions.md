@@ -128,7 +128,32 @@ void print_array(int numbers []);
 
 ## 109. Pass by Reference
 
+* Sometimes we want to be able to change the `actual parameter` from within the function body
+
+* In order to achieve this, we need the location or `address (&)` of the actual parameter
+
+* We saw how this is the effect with array, but what about other variable types?
+
+* We can use `reference parameters` to tell the compiler to pass in a reference to the `actual parameter`
+
+* The `formal parameter` will now be alias for the `actual parameter`
 ***
+
+
+```c++
+void print(const std::vector<int> &v){  // Look there is a `const` and `&v`
+    v.at(0) = 200;                      // ERROR
+    for (auto num : v) {
+        cout << num << end;
+    }
+}
+```
+
+```c++
+void pass_by_ref3(vector<string> &v){   // Notice: There is no `const`
+    v.clear()
+}
+```
 
 ## 110. Scope Rules
 
