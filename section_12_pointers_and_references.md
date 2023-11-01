@@ -74,6 +74,19 @@ string *p5 {nullptr};
 
 ## 120. Dereferencing a Pointer
 
+* Access the date we're pointing to - dereferencing a pointer
+
+```c++
+int score {100};
+int *score_ptr {&score};
+
+cout << *score_ptr << endl;     // 100
+
+*score_ptr = 200;
+cout << *score_ptr << endl;     // 200
+cout << score << endl;          // 200
+```
+
 ***
 
 ## 121. Dynamic Memory Allocation
