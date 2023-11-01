@@ -76,6 +76,8 @@ string *p5 {nullptr};
 
 * Access the date we're pointing to - dereferencing a pointer
 
+* You can access the data at the address contained in the `score_ptr` using the dereferencing operator (`*`)
+
 ```c++
 int score {100};
 int *score_ptr {&score};
