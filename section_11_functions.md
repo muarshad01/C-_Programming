@@ -219,7 +219,7 @@ static_local_example();
 ```
 * `static int num {5000}` will be initialized the first time function is called. After that it retains it s value.
 
-* `static int num {5000}` behaves like a global variable, however, its scope is local.
+* `static int num` behaves like a global variable, however, its scope is local.
 
 ***
 
