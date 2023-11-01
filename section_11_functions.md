@@ -208,7 +208,7 @@ global_example();
 
 ```c++
 void static_local_example(){
-    static int num {1000};
+    static int num {5000};
     cout << "\nLocal static num is" << num << endl;
     num += 1000;
     cout << "\nLocal static num is" << num << endl;
@@ -217,9 +217,9 @@ void static_local_example(){
 static_local_example();
 static_local_example();
 ```
-* `num` will be initialized to `5000` the first time function is called. After that it retains it s value.
+* `static int num {5000}` will be initialized the first time function is called. After that it retains it s value.
 
-* `static int num {1000}` behaves like a global variable, however, its scope is local.
+* `static int num {5000}` behaves like a global variable, however, its scope is local.
 
 ***
 
