@@ -157,6 +157,27 @@ void pass_by_ref3(vector<string> &v){   // Notice: There is no `const`
 
 ## 110. Scope Rules
 
+* C++ uses `scope rules` to determine where an identifier can be used
+* C++ used `static` of lexical scoping
+    - scope is determined the same way you read the program
+* `Local` of `Block {}` scope
+* Global scope
+
+
+* Local variables are NOT preserved between function call
+
+### Static Local Variables
+* Declared with `static` qualifier
+```c++
+static int value {10};
+```
+* Value is preserved between function calls
+* Only initialized the first time the function is called.
+
+### Global scope
+* Global constants are OK
+* Best practice - don't use global variables
+
 ***
 
 ## 111. How do Function Calls Work?
