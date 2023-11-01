@@ -214,10 +214,12 @@ void static_local_example(){
     cout << "\nLocal static num is" << num << endl;
 }
 
-local_example(10);
-local_example(20);
+static_local_example();
+static_local_example();
 ```
 * `num` will be initialized to `5000` the first time function is called. After that it retains it s value.
+
+* `static int num {1000}` behaves like a global variable, however, its scope is local.
 
 ***
 
