@@ -189,7 +189,35 @@ void local_example(int x){
 local_example(10);
 local_example(20);
 ```
-* Everytime we call `local_example()` function the local variable `num` is initialized to `1000`.
+* Everytime we call the function `local_example()`, the local variable `num` is initialized to `1000`.
+
+
+```c++
+int num {300};                  // Global variable - declared outside any class or variable
+
+void global_example() {
+    cout << "\nGlobal num is" << num << endl;
+    num *= 2;
+    cout << "\nLocal num is" << num << endl;
+}
+
+global_example();
+global_example();
+```
+
+
+```c++
+void static_local_example(){
+    static int num {1000};
+    cout << "\nLocal static num is" << num << endl;
+    num += 1000;
+    cout << "\nLocal static num is" << num << endl;
+}
+
+local_example(10);
+local_example(20);
+```
+* `num` will be initialized to `5000` the first time function is called. After that it retains it s value.
 
 ***
 
