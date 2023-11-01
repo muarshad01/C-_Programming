@@ -36,6 +36,40 @@ string *string_ptr {nullptr};
 
 ## 119. Accessing the Pointer Address and Storing Address in a Pointer
 
+* (`&`) the address operator
+
+```c++
+int num {10};
+cout << "The value of num is: " << num << endl;         // 10
+cout << "sizeof num is: " << sizeof(num) << endl;       // 4
+cout << "Address of num is: " << &num << endl;          // 0x61ff1c
+```
+
+```c++
+int *p;
+cout << "Value of p is: " << p << endl;                 // 0x61ff60 - garbage
+cout << "Address of p is: " << &p << endl;              // 0x61ff18
+cout << "sizeof p is: " << sizeof(p) << endl;           // 4
+
+p = nullptr;                                            // set `p` to point nowhere
+
+cout << "Value of p is: " << p << endl;                 // 0
+```
+
+* Don't confuse the size of a pointer and the size of what it points to
+* All pointers in a program have the same size
+
+```c++
+int *p1 {nullptr};
+double *p2 {nullptr};
+unsigned long long *p3 {nullptr};
+vector<string> *p4 {nullptr};
+string *p5 {nullptr};
+```
+
+* The compiler will make sure that the address stored in a pointer variable is of the correct type
+* pointers are variables so they can change
+
 ***
 
 ## 120. Dereferencing a Pointer
