@@ -260,5 +260,14 @@ unsigned long long fibonacci(unsigned long long n) {
 
 ## 115. Section Challenge - Solution
 
+```c++
+double calculate_mean(const vector<int> &v) {           // Notice, const and &v
+    int total {};
+    for (auto num : v)
+        total += num;
+    return static_cast<double>(total)/v.size();         // static_cast<double>
+}
+```
+
 ***
 
