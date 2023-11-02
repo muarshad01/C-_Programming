@@ -434,6 +434,16 @@ for (auto const &str : stooges) {   // Notice `const` keyword
 
 ## 129. L-values and R-values
 
+```c++
+int square(int &n) {
+    return n*n;
+}
+
+int num {10};
+
+square(num);        // OK
+```
+
 ***
 
 ## 130. Using the `CodeLite` IDE Debugger
