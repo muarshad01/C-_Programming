@@ -93,7 +93,44 @@ cout << score << endl;          // 200
 
 ## 121. Dynamic Memory Allocation
 
+* We can allocate storage for a variable at run time
+    - For arrays, we explicitly provide size and it was fixed
+    - But vectors, grow and shrink dynamically 
+
+* We can use pointers to `access newly allocated heap storage`
+
+```c++
+int *int_ptr {nullptr};
+
+int_ptr = new int;          // allocate an integer on heap
+
+cout << int_ptr << endl;    // 0x2747f28
+
+cout << *int_ptr << endl;   // 41188049 - garbage
+
+*int_ptr = 100;
+
+cout << *int_ptr << endl;   // 100
+
+delte int_ptr;              // frees the allocated storage
+```
+
+```c++
+int *array_ptr {nullptr};
+size_t size {0};
+
+cout<< "How big do you want the array?";
+cin >> size;
+
+array_ptr = new int[size];      // allocate array on the heap
+
+...
+
+delete [] array_ptr;            // free allocated storage
+```
+
 ***
+
 
 ## 122. The Relationship Between Arrays and Pointers
 
