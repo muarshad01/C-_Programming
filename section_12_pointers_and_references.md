@@ -154,6 +154,32 @@ cout << *score_ptr << endl;     // 100
 
 ## 123. Pointer Arithmetic
 
+```c++
+cout << *score_ptr << endl;
+score_ptr++;
+
+OR
+
+*score_ptr++;
+```
+
+```c++
+int scores[]{100, 95, 89, 68, -1};
+int *score_ptr {scores}
+
+while(*score_ptr != -1) {
+    cout << *score_ptr << endl;
+    score_ptr++;
+}
+
+cout << "\n-----------" << endl;
+
+score_ptr = scores;
+while(*score_ptr != -1) {
+    cout << *score_ptr++ << endl;
+}
+```
+
 ***
 
 ## 124. Const and Pointers
