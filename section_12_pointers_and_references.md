@@ -134,6 +134,18 @@ delete [] array_ptr;            // free allocated storage
 
 ## 122. The Relationship Between Arrays and Pointers
 
+```c++
+int scores[] {100, 95, 89};
+
+cout << scores << endl;         // 0x61fec8
+cout << *scores << endl;        // 100
+
+int *score_ptr {scores};
+
+cout << score_ptr << endl;      // 0x61fec8
+cout << *score_ptr << endl;     // 100
+```
+
 ***
 
 ## 123. Pointer Arithmetic
