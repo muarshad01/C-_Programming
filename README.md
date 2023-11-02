@@ -18,7 +18,7 @@
 * [Section 09: Controlling Program Flow]() -- skip
 * [Section 10: Characters and Strings]()
 * [Section 11: Functions](https://github.com/muarshad01/CPP_Programming/blob/main/section_11_functions.md) -- 11/01/2023
-* [Section 12: Pointers and References](https://github.com/muarshad01/CPP_Programming/blob/main/section_12_pointers_and_references.md)
+* [Section 12: Pointers and References](https://github.com/muarshad01/CPP_Programming/blob/main/section_12_pointers_and_references.md) -- 11/02/2023
 
 ## PART-2
 
