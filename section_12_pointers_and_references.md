@@ -230,6 +230,63 @@ const int *const score_ptr = { &high_score };
 
 ## 125. Passing Pointers to Functions
 
+* Pass-by-reference with pointers - defining the function
+
+* The function parameter is a pointer
+* The actual parameter can be a pointer or address-of-variable
+
+```c++
+void double_data(int *int_ptr);
+
+void double data(int *int_ptr) {
+    *int_ptr *= 2;
+}
+```
+
+```c++
+int main() {
+    int value {10};
+
+    cout << value << endl;      // 10
+
+    double_data( &value );      // address of variable
+    
+    cout << value << endl;      // 20
+}
+```
+
+```c++
+#include <iostream>
+
+void swap(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+int main() {
+    int x{100}, y{200};
+
+    cout << "\nx:" << x << endl;
+    cout << "\y:"  << x << endl;
+    
+    swap(&x, &y);
+
+    cout << "\nx:" << x << endl;
+    cout << "y:"   << x << endl;
+
+    return 0;
+}
+```
+
+```c++
+void display(const std::vector<string> *const v) {
+    for(auto str : *v)
+        cout << str << "";
+    cout << endl;
+}
+```
+
 ***
 
 ## 126. Returning a Pointer from a Function
