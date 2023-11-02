@@ -134,6 +134,10 @@ delete [] array_ptr;            // free allocated storage
 
 ## 122. The Relationship Between Arrays and Pointers
 
+* The value of `array_name` is `the address of the first element in the array`
+* The value of `pointer variable` is an `address`
+* If the pointer points to the-same-data-type-as-the-array-element (`int *score_ptr {scores};`) then the pointer and array name can be used interchangeably (almost)
+
 ```c++
 int scores[] {100, 95, 89};
 
