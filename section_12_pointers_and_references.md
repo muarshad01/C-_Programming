@@ -184,9 +184,10 @@ while(*score_ptr != -1) {
 
 ## 124. Const and Pointers
 
-* Pointers to constants
-    - The data pointed to by the pointers is constant and **cannot** be changed.
-    - The pointer itself can be changed and can point somewhere else.
+### Pointers to constants
+* The `data pointed to by the pointers` is constant and **cannot** be changed.
+* The pointer itself can be changed and can point somewhere else.
+
 ```c++
 int high_score {100};
 int  low_score {205};
@@ -199,6 +200,32 @@ const int *score_ptr = { &high_score };
 * Constant pointers
 * Constant pointers to constants
 
+### Constant pointers
+* The `data pointed to by the pointers` can be changed.
+* The pointer itself **cannot** change-and-point somewhere else.
+
+```c++
+int high_score {100};
+int  low_score {205};
+
+int *const score_ptr = { &high_score };
+
+*score_ptr = 86;                // OK
+ score_ptr = &low_score;        // ERROR
+```
+### Constant-pointers to constants
+* The `data pointed to by the pointer` is constant and **cannot** be changed.
+* The pointer itself **cannot** change-and-point somewhere else.
+
+```c++
+int high_score {100};
+int  low_score {205};
+
+const int *const score_ptr = { &high_score };
+
+*score_ptr = 86;                // ERROR
+ score_ptr = &low_score;        // ERROR
+```
 ***
 
 ## 125. Passing Pointers to Functions
