@@ -394,6 +394,42 @@ int *int_ptr;       // pointing anywhere
 
 ## 128. What is a Reference
 
+* An alias for a variable
+* Must be initialized to a variable when declared
+* Cannot be null
+* Once initialized cannot be made to refer to a different variable
+* Very useful as function parameters
+* Might be helpful to thin of a reference as a constant pointer that is automatically dereferences
+### Using references in range-based for loop
+```c++
+vector<string> stooges {"Larry", "Moe", "Curly"};
+
+for (auto str : stooges) {
+    str = "Funny";                  // changes the copy
+}
+
+for (auto str : stooges) {
+    cout << str << endl;            // Larry, Moe, Curly
+}
+```
+
+```c++
+vector<string> stooges {"Larry", "Moe", "Curly"};
+
+for (auto &str : stooges) {         // Notice `&str`
+    str = "Funny";                  // `&str` is a reference to each vector element
+}
+
+for (auto str : stooges) {
+    cout << str << endl;            // Funny, Funny, Funny
+}
+```
+
+```c++
+for (auto const &str : stooges) {   // Notice `const` keyword
+    str = "Funny";                  // Now the `vector` elements have changed
+}
+```
 ***
 
 ## 129. L-values and R-values
