@@ -12,6 +12,51 @@
 
 ## 137. Declaring a Class and Creating Objects
 
+```c++
+class Player {
+    // attributes
+    std::string name;
+    int health;
+    int xp;
+
+    // methods
+    void talk(std::string to_to_say);
+    bool is_dead();
+};
+
+```c++
+Player frank;
+Player hero;
+
+Player *enemy = new Player();       // creating an object dynamically on head using `new`
+
+delete enemy;                       // When I'm finished using enemy object, its storage has to be freed up using `delete`
+```
+
+```c++
+class Account {
+    // attributes
+    std::string name;
+    double balance;
+
+    // methods
+    bool withdraw(double amount);
+    bool deposit(double amount);
+};
+```
+
+```c++
+Account frank_account;
+Account jim_account;
+
+Account accounts [] {frank_account, jim_account};   // An array of Account objects
+
+Account *mary_account = new Account();
+delete mary_account;
+
+std::vector<Account> accounts1 {frank_account};     // standard vector of account objects
+accounts1.push_back(jim_account);
+```
 ***
 
 ## 138. Accessing Class Members
