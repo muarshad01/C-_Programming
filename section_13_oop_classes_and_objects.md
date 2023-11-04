@@ -186,6 +186,38 @@ Account *mary_account = new Account;
 delete   mary_account;
 ```
 
+### User-defined no-args constrcutor
+```c++
+class Account {
+private:
+    std::string name;
+    double balance;
+public:
+    Account() {
+        name = "None";
+        balance = 0.0;
+    }
+    bool withdraw(double amount);
+    bool  deposit(double amount);
+};
+```
+
+### No default constructor
+```c++
+class Account {
+private:
+    std::string name;
+    double balance;
+public:
+    Account(std::string name_val, double bal) {
+        name = name_val;
+        balance = bal;
+    }
+    bool withdraw(double amount);
+    bool  deposit(double amount);
+};
+```
+
 ***
 
 ## 143. Overloading Constructors
