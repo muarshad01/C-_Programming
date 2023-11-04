@@ -155,6 +155,37 @@ double Account::withdraw(double amount) {
 
 ## 142. The Default Constructor
 
+* Doesn't expect any arguments
+    - Also called no-args constructor
+* If you write no constructor at all for a class
+    - C++ will generate a Default Constructor that does nothing
+* Called when you instantiate a new object with no arguments
+```c++
+Player frank;
+Player *enemy = new Player;
+```
+### Using the default constructor
+
+```c++
+class Account {
+private:
+    std::string name;
+    double balance;
+public:
+    bool withdraw(double amount);
+    bool  deposit(double amount);
+};
+```
+
+```c++
+// creating two local objects frank_account and jim_account
+Account frank_account;
+Account   jim_account;
+
+Account *mary_account = new Account;
+delete   mary_account;
+```
+
 ***
 
 ## 143. Overloading Constructors
