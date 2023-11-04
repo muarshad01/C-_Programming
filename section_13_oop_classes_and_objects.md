@@ -71,6 +71,58 @@ accounts1.push_back(jim_account);
 
 ## 140. Implementing Member Methods
 
+File `Account.h` has **specification**:
+```c++
+
+#ifndef _ACCOUNT_H_
+#define _ACCOUNT_H_
+
+class Account {
+
+private:
+    // attributes
+    string name;
+    double balance;
+
+public:
+    // methods
+    // declared in-line
+    void set_balance(double bal);
+    double get_balance();
+};
+
+#endif
+```
+
+OR
+
+```c++
+#pragma once
+
+class Account {
+
+private:
+    double balance;
+
+public:
+    void set_balance(double bal);
+    double get_balance();
+};
+```
+
+File `Account.cpp` has **implementation**:
+```c++
+#include "Account.h"
+
+void Account::set_balance(double bal) {
+    balance = bal;
+}
+
+double Account::get_balance() {
+    return balance;
+}
+```
+
 ***
 
 ## 141. Constructor and Destructors
