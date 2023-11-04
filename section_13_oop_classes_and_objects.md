@@ -93,6 +93,7 @@ public:
     // methods will be declared OUTSIDE the class declaration
     void   set_name(std::string n);
     string get_name();
+    
     bool  deposit(double amount);
     bool withdraw(double amount);
 };
