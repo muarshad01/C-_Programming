@@ -218,6 +218,17 @@ public:
 };
 ```
 
+```c++
+// creating two local objects frank_account and jim_account
+Account frank_account;                      // Error
+Account   jim_account;                      // Error
+
+Account *mary_account = new Account;        // Error
+delete   mary_account;
+
+Account bill_account {"Bill", 15000.0};     // OK
+```
+
 ***
 
 ## 143. Overloading Constructors
