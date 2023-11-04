@@ -314,20 +314,40 @@ Player::Player(std::string name_val, int health_val, int xp_val)
 ```
 ***
 
-
-
-
-***
-
-
-
-
-
-
-
-***
-
 ## 145. Delegating Constructors
+
+* Often the code for constructors is very similar
+* Duplicating code can lead to errors
+* C++ allows delegating constructors
+    - code for one constructor can call another in the initialization list
+    - avoids duplicating code
+
+```c++
+Player::Player() 
+    : name{"None"}, health{0}, xp{0} {
+}
+
+Player::Player(std::string name_val) 
+    : name{name_val}, health{0}, xp{0} {
+}
+
+Player::Player(std::string name_val, int health_val, int xp_val) 
+    : name{name_val}, health{health_val}, xp{xp_val} {
+}
+
+// Delegating Constructures
+Player::Player() 
+    : Player {"None", 0, 0} {
+}
+
+Player::Player(std::string name_val) 
+    : Player {name_val, 0, 0} {
+}
+
+Player::Player(std::string name_val, int health_val, int xp_val) 
+    : name{name_val}, health{health_val}, xp{xp_val} {
+}
+```
 
 ***
 
