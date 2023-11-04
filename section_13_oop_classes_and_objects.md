@@ -81,45 +81,52 @@ class Account {
 
 private:
     // attributes
-    string name;
+    std::string name;
     double balance;
 
 public:
     // methods
-    // declared in-line
-    void set_balance(double bal);
-    double get_balance();
+    // declared IN-LINE
+    void   set_balance(double bal) { balance = bal; }
+    double get_balance() { return balance; }
+
+    // methods will be declared OUTSIDE the class declaration
+    void   set_name(std::string n);
+    string get_name();
+    bool  deposit(double amount);
+    bool withdraw(double amount);
 };
 
-#endif
+#endif      // _ACCOUNT_H_
 ```
 
-OR
-
-```c++
-#pragma once
-
-class Account {
-
-private:
-    double balance;
-
-public:
-    void set_balance(double bal);
-    double get_balance();
-};
-```
+* Note, some compiler use `#pragma once` insted as well. See the documentation.
 
 File `Account.cpp` has **implementation**:
+
 ```c++
 #include "Account.h"
 
-void Account::set_balance(double bal) {
-    balance = bal;
+void Account::set_name(std::string n) { 
+    name = n;
 }
 
-double Account::get_balance() {
-    return balance;
+void Account::get_name() { 
+    return name;
+}
+
+bool Account::deposit(double amount) {
+    balance += amount;
+    return true;
+}
+
+double Account::withdraw(double amount) {
+    if(balance-amount >= 0) {
+        balance -= amount;
+        return true;
+    } else {
+        return false;
+    }
 }
 ```
 
