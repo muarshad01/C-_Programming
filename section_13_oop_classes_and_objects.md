@@ -71,6 +71,21 @@ accounts1.push_back(jim_account);
 
 ## 140. Implementing Member Methods
 
+* Very similar to how we implemented functions
+
+* Member methods have access to member attributes
+    - So you don't need to pass them as arguments!
+
+* Can be implemented inside the class declaration
+    - Implicitly inline
+
+* Can be implemented outside the class declaration
+    - Need to use Class_name::method_name
+
+* Can separate specification from implementation
+    - `.h` file for the class declaration
+    - `cpp` file for the class implementation
+
 File `Account.h` has **specification**:
 ```c++
 
@@ -112,7 +127,7 @@ void Account::set_name(std::string n) {
     name = n;
 }
 
-void Account::get_name() { 
+string Account::get_name() { 
     return name;
 }
 
