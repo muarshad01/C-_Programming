@@ -271,6 +271,60 @@ delete enemy;
 
 ## 144. Constructor Initialization lists
 
+```c++
+// Previous way:
+Player::Player() {
+    name = "None";          // assignment not initialization
+    health = 0;
+    xp = 0;
+}
+
+// Better way:
+Player::Player() 
+    : name{"None"}, health{0}, xp{0} {
+}
+```
+
+```c++
+// Previous way:
+Player::Player(std::string name_val) {
+    name = name_val;                    // assignment not initialization
+    health = 0;
+    xp = 0;
+}
+
+// Better way:
+Player::Player(std::string name_val) 
+    : name{name_val}, health{0}, xp{0} {
+}
+```
+
+```c++
+// Previous way:
+Player::Player(std::string name_val, int health_val, int xp_val) {
+    name = name_val;          // assignment not initialization
+    health = health_val;
+    xp = xp_val;
+}
+
+// Better way:
+Player::Player(std::string name_val, int health_val, int xp_val) 
+    : name{name_val}, health{health_val}, xp{xp_val} {
+}
+```
+***
+
+
+
+
+***
+
+
+
+
+
+
+
 ***
 
 ## 145. Delegating Constructors
