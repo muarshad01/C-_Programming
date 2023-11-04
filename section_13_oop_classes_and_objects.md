@@ -147,7 +147,6 @@ double Account::withdraw(double amount) {
 ```
 
 ***
-***
 
 ## 141. Constructor and Destructors
 
