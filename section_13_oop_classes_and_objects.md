@@ -23,6 +23,7 @@ class Player {
     void talk(std::string to_to_say);
     bool is_dead();
 };
+```
 
 ```c++
 Player frank;
@@ -57,6 +58,7 @@ delete mary_account;
 std::vector<Account> accounts1 {frank_account};     // standard vector of account objects
 accounts1.push_back(jim_account);
 ```
+
 ***
 
 ## 138. Accessing Class Members
