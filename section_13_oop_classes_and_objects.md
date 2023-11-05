@@ -150,6 +150,49 @@ double Account::withdraw(double amount) {
 
 ## 141. Constructor and Destructors
 
+* Same name as the class
+* No return type is specified
+* Can be overloaded
+
+### Destructors
+
+* Same name as the class proceeded with a tilde(`~`)
+* Invoked automatically when an object is destroyed
+* No return type and no parameters
+* On 1 destructor is allowed per class - cannot be overloaded!
+* Useful to release memory and other resources
+
+```c++
+class Player {
+private:
+    std::string name;
+    int health;
+    int xp;
+public:
+    Player();
+    Player(std::string name);
+    Player(std::string name, int health, int xp);
+    // Destructor
+    ~Player();
+};
+```
+
+```c++
+{
+    Player slayer;
+    Player frank {"Frank", 100, 4};
+    Player hero {"Hero"};
+    Player villain {"Villain"};
+}   // 4 destructor are called
+```
+* All of above 4 objects are local objects and they'll be created on STACK.
+* When the block `{}` ends, these objects go out-of-scope and their destructure will be called automatically.
+
+```c++
+Player *enemy = new Player("Enemy", 100, 0);
+delete enemy;   // destructor called
+```
+
 ***
 
 ## 142. The Default Constructor
