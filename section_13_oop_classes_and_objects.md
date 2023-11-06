@@ -500,6 +500,53 @@ public:
 
 ## 149. Deep Copying with the Copy Constructor
 
+* Create a copy of the pointed-to data
+* Each copy will have a pointer to unique storage in the heap
+* Deep copy when you have a raw pointer as a class data member
+
+```c++
+class Deep {
+private:
+    int *data;                      // POINTER
+public:
+    Deep(int d);                    // Constructor
+    Deep(const Deep &source)        // Copy Constructor
+    ~Deep();                        // Destructor
+};
+```
+
+```c++
+Deep::Deep(int d) {
+    data = new int;                 // allocate storage
+    *data = d;
+}
+```
+
+```c++
+Deep::~Deep() {
+    delete data;                    // free storage
+    cout << "Destructor freeing data" << endl;
+}
+```
+
+### Copy Constructor
+```c++
+Deep::Deep(const Deep &source) {
+    data = new int;                 // allocate storage
+    *data = *source.data;
+    cout << "Copy constructor - deep" << endl;
+}
+```
+
+```c++
+Deep::Deep(const Deep &source) 
+    : Deep{*source.data} {
+        cout << "Copy constructor - deep" << endl;
+}
+```
+
+* Delegate to `Deep(int)` and pass in the `int (*source.data)` source is pointing to
+
 ***
 
 ## 150. Move Constructors
