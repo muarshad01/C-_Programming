@@ -22,7 +22,7 @@
 
 ## PART-2
 
-* [Section 13: OOP - Classes and Objects]()
+* [Section 13: OOP - Classes and Objects](https://github.com/muarshad01/CPP_Programming/blob/main/section_13_oop_classes_and_objects.md) -- 11/06/2023
 * [Section 14: Operator Overloading]()
 * [Section 15: Inheritance]()
 * [Section 16: Polymorphism]()
