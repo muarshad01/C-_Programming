@@ -432,43 +432,10 @@ Player create_super_enemy() {
 enemy = create_super_enemy();
 ```
 
-```c++
-Player hero {"Hero", 100, 100};
 
-Player another_hero {hero};     // A COPY of hero is made
-```
 
-* Beware if you have a pointer data member
-    - Pointer will be copied
-    - Not what it is pointing to
-    - Shallow vs. Deep copy - more in the next video
 
-### Best practices
-* Provide a copy constructor when your class has raw pointer members
-* Provide the copy constructor with a `const` reference parameter
-* USE STL classes as they already provide copy constructors
-* Avoid using raw pointer data members if possible
 
-```c++
-Type::Type(const Type &source);
-Player::Player(const Player &Player);
-Account::Account(const Account & Account)
-```
-
-```c++
-Player::Player(const Player &source) 
-    : name{source.name},
-      health {source.health}, 
-      xp : {source.xp} {
-}
-```
-
-```c++
-Account::Account(const Account &source) 
-    : name{source.name},
-      balance {source.balance} {
-}
-```
 
 ***
 
