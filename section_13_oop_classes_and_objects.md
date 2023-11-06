@@ -474,6 +474,28 @@ Account::Account(const Account &source)
 
 ## 148. Shallow Copying with the Copy Constructor
 
+* Consider a class that contains a pointer as a data member
+* Constructor allocates storage dynamically and initialized the pointer
+* Destructor allocates the memory allocated by the constructor
+* What happens in the default copy constructor
+
+### Default copy constructor
+* memberwise copy
+* Each data member is copied from the source object
+* The pointer is copied NOT what it points to (shallow copy)
+* **PROBLEM**: When we release the storage in the destructor, the other object still refers to the released storage.
+
+```c++
+class Shallow {
+private:
+    int *data;
+public:
+    Shallow(int d);                     // Constructor
+    Shallow(const Shallow &source);     // COPY Constructor
+    ~Shallow();                         // Destructor
+};
+```
+
 ***
 
 ## 149. Deep Copying with the Copy Constructor
