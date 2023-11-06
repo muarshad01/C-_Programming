@@ -561,6 +561,40 @@ Deep::Deep(const Deep &source)
 
 ## 152. Using `const` with Classes
 
+* Pass arguments to class member methods as `const`
+* We can also create `const` objects
+* What happens if we call member functions on `const` objects?
+* `const`-correctness
+
+```c++
+const Player villain {"Villain", 100, 55};
+
+villain.set_name("Nice guy");                   // ERROR
+
+std::cout << villain.get_name() << std::end;    // ERROR
+```
+
+```c++
+const Player villain {"Villain", 100, 55};
+
+void display_player_name(const Player &p) {
+    cout << p.get_name() << endl;
+}
+
+display_player_name(villain);       // ERROR
+```
+
+```c++
+class Player {
+private:
+    ...
+public:
+    std:string get_name() const;
+    ...
+};
+```
+
+
 ***
 
 ## 153. Static Class Members
