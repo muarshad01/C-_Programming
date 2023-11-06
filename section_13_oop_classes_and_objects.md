@@ -567,11 +567,47 @@ Deep::Deep(const Deep &source)
 
 ***
 
-## 154. Struct vs Classes
+## 154. Structs vs Classes
+
+* In addition to define a `class` we can declare a `struct`
+* `struct` come from the C programming language
+* Essentially the same as a `class` except
+    - members are `public` by default
+
+```c++
+class Person {
+    std::string name;
+    std::string get_name();
+};
+
+Person p;
+p.name = "Frank";               // compiler error
+std::cout << p.get_name();      // compiler error
+```
+
+```c++
+struct Person {
+    std::string name;
+    std::string get_name();
+};
+
+Person p;
+p.name = "Frank";               // OK - public
+std::cout << p.get_name();      // OK - public
+```
+
+* `struct`
+    - Use `struct` for passive objects with public access
+    - Don't declare methods in `struct`
+* `class`
+    - Use class for active objects with private access
+    - Implement getters / setters as needed
+    - Implement member methods as needed
 
 ***
 
 ## 155. Friends of a class
+
 
 ***
 
