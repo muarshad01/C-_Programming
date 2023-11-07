@@ -120,6 +120,20 @@ delete p_account;
 
 ## 174. Constructors and Destructors
 
+```c++
+class Base {
+public:
+    Base(){ cout << "Base constructor" << endl; }
+    ~Base(){ cout << "Base destructor" << endl; }
+};
+
+class Derived : public Base {
+public:    
+    Derived(){ cout << "Derived constructor" << endl; }
+    ~Derived(){ cout << "Derived destructor" << endl; }
+};
+```
+
 ***
 
 ## 175. Passing Arguments to Base Class Constructors
