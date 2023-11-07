@@ -155,6 +155,48 @@ public:
 
 ## 176. Copy / Move Constructors and Operator = with Derived Classes
 
+```c++
+class Derived : public Base {
+    int doubled_value;
+public:
+    // Same constructors as previous example
+
+    Derived(const Derived &other)
+        : Base(other), doubled_value {other.doubled_value} {
+            cout << "Derived copy constructor " << endl;
+    }
+};
+```
+
+```c++
+class Base {
+    int value;
+public:
+    // Same constructors as previous example
+    Base &operator=(const Base &rhs) {
+        if (this != &rhs) {
+            value = rhs.value;
+        }
+        return *this;
+    }
+};
+```
+
+```c++
+class Derived : public Base {
+    int doubled_value;
+public:
+    
+    Derived &operator=(const Derived &rhs) {
+        if (this != &rhs) {
+            Base::operator(rhs);                // Assign Base part
+            doubled_value = rhs.doubled_value;  // Assign Derived part
+        }
+        return *this;
+    }
+};
+```
+
 ***
 
 ## 177. Redefining Bases Class Methods
