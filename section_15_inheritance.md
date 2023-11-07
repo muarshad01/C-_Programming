@@ -138,6 +138,19 @@ public:
 
 ## 175. Passing Arguments to Base Class Constructors
 
+```c++
+class Derived : public Base {
+    int doubled_value;
+public:
+    Derived() : Base {}, double_value{0} {
+        cout << "Derived no-args constructor " << endl;
+    }
+    Derived(int x) : Base {x}, double_value{x*2} {
+        cout << "int Derived constructor " << endl;
+    }
+};
+```
+
 ***
 
 ## 176. Copy / Move Constructors and Operator = with Derived Classes
