@@ -125,6 +125,34 @@ class C : public B {
 
 ## 190. Pure Virtual Functions and Abstract Classes
 
+* Pure virtual function
+    - Used to make a class abstract
+    - Specified with "=0" in its declaration
+```c++
+virtual void function() = 0     // pure virtual function
+```
+* Typically do not provide implementations
+* Derived classes MUST override the base class
+    - If the Derived class does not override then the Derived class is also abstract
+* Used when it doesn't make sense for a base class to have an implementation
+    - But concrete classes must implement it
+```c++
+virtual void draw() = 0;
+virtual void defend() = 0;
+```
+
+* Abstract Base class
+- Cannot be instantiated
+```c++
+Shape shape;                    // Error
+Shape *ptr = new Shape();       // Error
+```
+* We can use pointers and references to dynamically refer to concrete classes derived from them
+```c++
+Shape *ptr = new Circle();
+ptr->draw();
+ptr->rotate();
+```
 ***
 
 ## 191. Abstract Classes as Interfaces
