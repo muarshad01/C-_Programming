@@ -44,9 +44,31 @@ class Trust_Account : public Account {
 
 ## 170. Terminology and Notation
 
+* Base class (parent class, super class)
+* Derived class (child class, sub class)
+
 ***
 
 ## 171. Inheritance vs. Composition
+
+* Inheritance
+    - `is-a` relationship
+        - Employee `is-a` Person
+        - Checking Account `is-a` Account
+        - Circle `is-a` Shape
+* Composition
+    - `has-a` relationship
+        - Person `has a` Account
+        - Player `has a` Special Attack
+        - Circle `has a` Location
+
+```c++
+class Person {
+private:
+    std::string name;       // has-a name
+    Account account;        // has- account
+};
+```
 
 ***
 
