@@ -74,6 +74,44 @@ private:
 
 ## 172. Deriving Classes from Existing Classes
 
+```c++
+class Base {
+    // Base class members...
+};
+
+class Derived : access-specifier Base {
+    // Derived class members
+};
+```
+* Access-specifier can be: `public`, `private`, or `protected`
+
+* `public`
+    - Most common
+    - Established `is-a` relationship between Derived and Base classes
+* `private` and `protected`
+    - Establishes "derived class has a base class" relationship
+
+```c++
+class Account {
+    // Account class members...
+};
+
+class Savings_Account : public Account {
+    // Saving_Account class members...
+};
+```
+* Saving_Account `is-a` Account
+
+```c++
+Account account {};
+Account *p_account = new Account();
+
+account.deposit(1000.0);
+p_account->withdraw(200.0)
+
+delete p_account;
+```
+
 ***
 
 ## 173. Protected Members and Class Access
