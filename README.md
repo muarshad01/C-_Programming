@@ -25,7 +25,7 @@
 * [Section 13: OOP - Classes and Objects](https://github.com/muarshad01/CPP_Programming/blob/main/section_13_oop_classes_and_objects.md) -- 11/06/2023
 * [Section 14: Operator Overloading]()
 * [Section 15: Inheritance](https://github.com/muarshad01/CPP_Programming/blob/main/section_15_inheritance.md) -- 11/07/2023
-* [Section 16: Polymorphism]()
+* [Section 16: Polymorphism](https://github.com/muarshad01/CPP_Programming/blob/main/section_16_polymorphism.md) -- 11/07/2023
 * [Section 17: Smart Pointers]()
 
 ## PART-3
