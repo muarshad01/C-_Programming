@@ -76,6 +76,18 @@ public:
 
 ## 186. Virtual Destructors
 
+* If a class has virtual functions
+* ALWAYS provide a public virtual destructor
+* If base class destructor is virtual then all derived class destructor are also virtual
+
+```c++
+class Account {
+public:
+    virtual void withdraw(double amount);
+    virtual ~Account();
+};
+```
+
 ***
 
 ## 187. Using the override Specifier
