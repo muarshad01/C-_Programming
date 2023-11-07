@@ -205,6 +205,12 @@ public:
 
 ## 178. Multiple Inheritance
 
+```c++
+std::ostream &operator <<(std::ostream &os, const Account &account) {
+...
+}
+```
+
 ***
 
 ## 179. The Updated Accounts Example
