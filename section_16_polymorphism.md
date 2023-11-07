@@ -4,6 +4,16 @@
 
 ## 183. What is Polymorphism?
 
+* Ploymorphism
+    - Compile-time / early binding / static binding
+    - Run-time / late binding / dynamic binding
+* Run-time polymorphism
+    - Being able to assign different meanings to the same function at run-time
+* Run-time polymorphism is achieved via
+    - Inheritance
+    - Base class pointers or references
+    - Virtual functions
+
 ***
 
 ## 184. Using a Base Class Pointer
