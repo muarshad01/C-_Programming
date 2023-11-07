@@ -18,10 +18,60 @@
 
 ## 184. Using a Base Class Pointer
 
+```c++
+Account *p1 = new Account();
+Account *p2 = new Account();
+Account *p3 = new Account();
+Account *p4 = new Account();
+
+Account *array[] = {p1, p2, p3, p4};
+
+for (auto i=0; i<4; ++i) {
+    array[i] -> withdraw(1000);
+}
+```
+
+```c++
+Account *p1 = new Account();
+Account *p2 = new Account();
+Account *p3 = new Account();
+Account *p4 = new Account();
+
+vector<Account *> accounts
+    {p1, p2, p3, p4};
+
+for (auto acc_ptr : accounts) {
+    acc_ptr -> withdraw(1000);
+}
+
+// delete the pointers
+```
 ***
 
 ## 185. Virtual Functions
 
+* Declare the function you want to override as virtual in the Base class
+* Virtual functions are virtual all the way down the hierarchy from this point
+* Dynamic polymorphism only via Account class pointer or reference 
+
+```c++
+class Account {
+public:
+    virtual void withdraw(double amount);
+};
+```
+
+* Override the function in the Derived classes
+* Function signature and return type must match EXACTLY
+* virtual keyword not required but is best practice
+* If you don't provide an overridden version it is inherited from it's base class
+
+```c++
+class Checking: public Account {
+public:
+    virtual void withdraw(double amount);
+};
+```
 ***
 
 ## 186. Virtual Destructors
