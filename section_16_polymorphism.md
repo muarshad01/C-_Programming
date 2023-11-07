@@ -157,6 +157,10 @@ ptr->rotate();
 
 ## 191. Abstract Classes as Interfaces
 
+```c++
+friend std::ostream &operator(std::ostream &os, const Account &acc);
+```
+
 ***
 
 ## 192. Section Challenge
