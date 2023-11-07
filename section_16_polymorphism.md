@@ -90,11 +90,32 @@ public:
 
 ***
 
-## 187. Using the override Specifier
+## 187. Using the `override` Specifier
 
 ***
 
-## 188. Using the Final Specifier
+## 188. Using the `final` Specifier
+
+* When sued at the class level
+    - Prevents class from being derived from
+
+* When used at the method level
+    - Prevents virtual method from being overridden in derived classes
+
+```c++
+class A {
+public:
+    virtual void do_something();
+};
+
+class B : public A {
+    virtual void do_something() final;      // prevent further overriding
+};
+
+class C : public B {
+    virtual void do_something();            // COMPILER ERROR - Can't override
+};
+```
 
 ***
 
