@@ -39,4 +39,30 @@ std::cout << sum << std::endl;
 
 ## 239. Generic Programming with Macros
 
+* Generic programming: Writing code that works with a variety of types as arguments, as long as those argument meet specific syntactic and semantic requirements.
+
+* Function templates
+
+* Class templates
+
+```c++
+#define MAX(a, b) ((a > b) ? a : b)
+
+std::coud << MAX(10, 20)   << std::endl;
+std::coud << MAX(2.5, 3.5) << std::endl;
+std::coud << MAX('A', 'C') << std::endl;
+```
+
+* Macros ***beware***
+```c++
+#define SQUARE(a) a*a
+
+#define SQUARE(a) ((a)*(a))
+```
+
+
+
+
+
+
 ***
