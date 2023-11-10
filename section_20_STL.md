@@ -114,6 +114,44 @@ void func(T1 a, T2 b) {
     std::cout << a << " " << b;
 }
 ```
+
+```c++
+func<int, double>(10, 20.2);
+
+func('A', 12.4);
+```
+
+```c++
+struct Person {
+    std::string name;
+    int age;
+    bool operator<(const Person &rhs) const {
+        return this->age < rhs.age;
+    }
+};
+
+Person p1 = {"Curly", 15};
+Person p2 = {"Moe", 30};
+
+Person p3 = min(p1, p2);
+```
+
+```c++
+std::ostream &operator<<(std::ostream &os, const Person &p) {
+    os << p.name;
+    return os;
+}
+```
+
+```c++
+template <typename T>
+void swap(T &a, T &b) {
+    temp = a;
+    a = b;
+    b = temp;
+}
+```
+
 ***
 
 
