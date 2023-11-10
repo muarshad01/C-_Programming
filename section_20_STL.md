@@ -154,4 +154,36 @@ void swap(T &a, T &b) {
 
 ***
 
+## 241. Generic Programming with Class Templates
 
+* Similar to function template, but at the class level
+* Allows plugging-in any data type
+
+
+```c++
+class Item {
+private:
+    std::string name;
+    int value;
+public:
+    Item(std::string name, int value)
+        : name{name}, value{value}
+    {}
+    std::string get_name() const { return name;}
+    int get_value() const {return value; }
+};
+```
+
+* But we'd like our `Item` class to be able to hold any type of data in addition to the string
+* We can't overload class names
+* We don't want to use `dynamic polymorphism`
+
+[std::pair](https://en.cppreference.com/w/cpp/utility/pair)
+```c++
+#include <utility>
+
+std::pair<std::string, int> p1 {"Frant", 100};
+std::cout << p1.first;  // Frank
+std::cout << p1.second; // 100
+
+```
