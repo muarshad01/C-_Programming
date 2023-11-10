@@ -185,5 +185,49 @@ public:
 std::pair<std::string, int> p1 {"Frant", 100};
 std::cout << p1.first;  // Frank
 std::cout << p1.second; // 100
+```
+
+[std::array](https://en.cppreference.com/w/cpp/container/array)
+
+***
+
+## 243. Introduction to STL Containers
+
+* Each container has member functions
+    - Some are specific to the container
+    - Others are available to all containers
+* Each container has an associated header file
+    - `#include <container_type>`
+***
+
+## 244. Introduction to STL Iterators
+
+* Iterators must be declared based on the container type they will iterate over
+
+```c++
+container_type::iterator_type iterator_name
+```
+
+```c++
+std::vector<int>::iterator it1;
+std::list<std::string>::iterator it2;
+std::map<std::string, std::string>::iterator it3;
+std::set<char>::iterator it4;
+```
+
+```c++
+std::vector<int> vec {1,2,3};
+
+std::vector<int>::iterator it = vec.begin();
+
+OR
+
+auto it = vec.begin()
+
+
+for (auto it = vec.begin(); it != vec.end(); it++) {
+    std::cout << *it << " ";
+}
 
 ```
+***
