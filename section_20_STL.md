@@ -286,3 +286,26 @@ std::array<int,5>::iterator min_num = std::min_element(arr1.begin(), arr1.end())
 ```
 
 ***
+
+## 249. Sequence Containers - Vector
+
+***
+
+## 250. Sequence Containers - Deque
+
+***
+
+## 251. Section Challenge 1
+
+***
+
+## 252. Section Challenge 1 - Solution
+
+***
+
+## 253. Sequence Containers - List and Forward List
+
+***
+
+
+
