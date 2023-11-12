@@ -230,4 +230,48 @@ for (auto it = vec.begin(); it != vec.end(); it++) {
 }
 
 ```
+
+***
+
+## 245. Introduction to Iterators - Demo
+
+```c++
+#include <vector>
+#include <set>
+#include <map>
+#include <list>
+```
+
+***
+
+# 246. Introduction to STL Algorithms
+
+* Many algorithms require extra information in order to do their work
+    - **Functors (function objects)**
+    - Function pointers
+    - Lambda expressions (C++11)
+
+***
+
+## 247. Introduction to Algorithms - Demo
+
+```c++
+class Person {
+public:
+    std::string name;
+    int age;
+private:
+    Person() = default;
+    Person()
+        : name{name}, age{age}  {}
+    bool operator<(const Person &rhs) const {
+        return this->age < rhs.age;
+    }
+    bool operator==(const Person &rhs) const {
+        return (this->name == rhs.name && this->age == rhs.age);
+    }
+};
+```
+
+
 ***
