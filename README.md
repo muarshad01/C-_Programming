@@ -32,7 +32,7 @@
 
 * [Section 18: Exception Handling]()
 * [Section 19: I/O and Streams]()
-* [Section 20: The Standard Template Library (STL)]() -- skip
+* [Section 20: The Standard Template Library (STL)](https://github.com/muarshad01/CPP_Programming/blob/main/section_20_STL.md) -- Nov. 11, 2023
 * [Section 21: Lambda Expressions]()
 * [Section 22: Using VSCode](https://github.com/muarshad01/CPP_Programming/blob/main/section_22_Using_VSCode.md) -- 10/28/2023
 * [Section 23: Enumerations]()
