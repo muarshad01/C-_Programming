@@ -330,3 +330,23 @@ std::array<int,5>::iterator min_num = std::min_element(arr1.begin(), arr1.end())
 ## 259. Section Challenge 3 - Solution
 
 ***
+
+## 260. Container Adaptors - Stack
+
+***
+
+## 261. Container Adaptors - Queue
+
+***
+
+## 262. Section Challenge 4
+
+***
+
+## 263. Section Challenge 4 - Solution
+
+***
+
+## 264. Container Adaptors - Priority Queue
+
+***
