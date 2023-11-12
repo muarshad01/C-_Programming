@@ -307,5 +307,26 @@ std::array<int,5>::iterator min_num = std::min_element(arr1.begin(), arr1.end())
 
 ***
 
+## 254. Section Challenge 2
 
+***
 
+## 255. Section Challenge 2 - Solution
+
+***
+
+## 256. Associative Containers - Sets
+
+***
+
+## 257. Associative Containers - Maps
+
+***
+
+## 258. Section Challenge 3
+
+***
+
+## 259. Section Challenge 3 - Solution
+
+***
