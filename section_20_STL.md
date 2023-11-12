@@ -272,6 +272,17 @@ private:
     }
 };
 ```
+***
 
+## 248. Sequence Container - Array
+
+* [Containers library](https://en.cppreference.com/w/cpp/container)
+
+```c++
+std::array<int,5> arr1 {2,1,4,5,3};
+
+std::array<int,5>::iterator min_num = std::min_element(arr1.begin(), arr1.end());
+                       auto max_num = std::max_element(arr1.begin(), arr1.end());
+```
 
 ***
