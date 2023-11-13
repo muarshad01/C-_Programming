@@ -65,6 +65,20 @@ std::cout.setf(std::ios::noboolalpha);
 
 ## 224. Reading from a Text File
 
+```c++
+std::ifstream in_file{"../myfile.txt"};
+std::string line {};
+
+if (!in_file) {     // check if file is open
+    std::cerr << "File open error" << std::endl;
+    return 1;       // exit the program (main)
+}
+while (!in_file.eof()) {            // while not at the end
+    std::getline(in_file, line)     // read a line
+    cout << line << std::endl;      // display the line
+}
+in_file.close();                    // close the file
+```
 ***
 
 ## 225. Reading from a Text File - Live Demo - Part 1
