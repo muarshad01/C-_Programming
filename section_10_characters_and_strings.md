@@ -1,5 +1,12 @@
 ## 93. Section Overview
 
+* Character functions
+* C-style Strings
+* Working with C-style Strings
+* ---
+* C++ Strings
+* Working with C++ Strings
+
 ***
 
 ## 94. Character Functions
