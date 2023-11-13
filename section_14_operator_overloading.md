@@ -72,6 +72,16 @@ MyString::~MyString {
 
 ## 160. Overloading the Assignment Operator (copy)
 
+```c++
+Type &Type::operator=(const Type &rhs);
+
+MyString &MyString::operator=(const MyString &rhs);
+
+s2 = s1;            // We write this
+
+s2.operator=(s1)    // operator= method is called
+```
+
 ***
 
 ## 161. Overloading the Assignment Operator (move)
