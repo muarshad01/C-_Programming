@@ -26,7 +26,7 @@
 * [Section 14: Operator Overloading](https://github.com/muarshad01/CPP_Programming/blob/main/section_14_operator_overloading.md) -- Nov. 13, 2023
 * [Section 15: Inheritance](https://github.com/muarshad01/CPP_Programming/blob/main/section_15_inheritance.md) -- 11/07/2023
 * [Section 16: Polymorphism](https://github.com/muarshad01/CPP_Programming/blob/main/section_16_polymorphism.md) -- 11/07/2023
-* [Section 17: Smart Pointers]()
+* [Section 17: Smart Pointers](https://github.com/muarshad01/CPP_Programming/blob/main/section_17_smart_pointers.md) -- Nov. 13, 2023
 
 ## PART-3
 
