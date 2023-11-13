@@ -24,9 +24,22 @@
 
 ## 217. Stream Manipulators
 
+```c++
+std::coud.width(10);            // member function
+std::cout << std::setw(10);     // manipulator
+```
+
 ***
 
 ## 218. Stream Manipulators - boolean
+
+```c++
+std::cout << std::noboolalpha;      // 1 or 0
+std::cout << std::boolalpha;        // true of false
+
+std::cout.setf(std::ios::boolalpha);
+std::cout.setf(std::ios::noboolalpha);
+```
 
 ***
 
