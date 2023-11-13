@@ -8,11 +8,18 @@
 *  `fstream` - Provides definitions for formatted input and output from/to file streams
 *  `iomanip` - Provides definitions for manipulators used to format stream I/O
 
+
 * `ios` - Provides basic support for formatted and unformatted I/O operations. Base class most other classes
 * `ifstream` - Provides for high-level input operations on file based streams
 * `ofstream` - Provides for high-level output operations on file based streams
 * `fstream` - Provides for high-level I/O operations on file based streams. Derived from `ofstream` and `ifstream`
 * `stringstream` - Provides for high-level I/O operations on memory based string. Derived from `istringstream` and `ostringstream`
+
+* `cin`
+* `cout`
+* `cerr`
+* `clog`
+
 ***
 
 ## 217. Stream Manipulators
