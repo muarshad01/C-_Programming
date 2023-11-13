@@ -1,5 +1,9 @@
 ## 205. Section Overview
 
+```c++
+std::exceptoin and what()
+```
+
 ***
 
 ## 206. Basic Concepts and a Simple Example: Dividing by Zero
@@ -27,6 +31,10 @@
 ***
 
 ## 212. The C++ std::exception Class Hierarchy
+
+```c++
+virtual const char *what() const noexcept;
+```
 
 ***
 
