@@ -86,6 +86,15 @@ s2.operator=(s1)    // operator= method is called
 
 ## 161. Overloading the Assignment Operator (move)
 
+```c++
+Type &Type::operator=(MyString &&rhs);
+
+MyString &MyString::operator=(MyString &&rhs);
+
+s1 = MyString{"Joe"};       // move operator= called
+s1 = "Frank";               // move operator= called
+```
+
 ***
 
 ## 162. Overloading Operators as Member Functions
