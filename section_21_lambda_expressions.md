@@ -78,6 +78,27 @@ d2("Frank");            // d.operator("Frank");
 
 ## 267. Structure of Lambda
 
+```c++
+[] () -> return_type specifiers {};
+```
+
+```c++
+[] () { std::cout << "Hi"; };
+```
+* A simple lambda expression
+
+```c++
+[] (int x) { std::cout << x; };
+[] (int x, int y) { std::cout << x+y; };
+```
+
+```c++
+auto l = [] () { std::cout << "Hi"; };
+l();        // Displays Hi
+
+l(10);      // displays 10
+l(100);     // displays 100
+```
 ***
 
 ## 268. Stateless Lambda Expressions
