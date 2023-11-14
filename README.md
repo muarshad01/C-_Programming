@@ -14,7 +14,7 @@
 * [Section 05: Structure of C++ Program](https://github.com/muarshad01/CPP_Programming/blob/main/section_05_structure_of_a_c%2B%2B_program.md) -- 10/30/2023
 * [Section 06: Variables and Constants](https://github.com/muarshad01/CPP_Programming/blob/main/section_06_variables_and_constants.md) -- 10/30/2023
 * [Section 07: Arrays and Vectors](https://github.com/muarshad01/CPP_Programming/blob/main/section_07_arrays_and_vectors.md) -- Nov. 13, 2023
-* [Section 08: Statements and Operators]()
+* [Section 08: Statements and Operators](https://github.com/muarshad01/CPP_Programming/blob/main/section_08_statements_and_operators.md) -- Nov. 14, 2023
 * [Section 09: Controlling Program Flow]() -- skip
 * [Section 10: Characters and Strings](https://github.com/muarshad01/CPP_Programming/blob/main/section_10_characters_and_strings.md) -- Nov. 14, 2023
 * [Section 11: Functions](https://github.com/muarshad01/CPP_Programming/blob/main/section_11_functions.md) -- 11/01/2023
