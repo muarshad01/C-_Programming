@@ -103,6 +103,86 @@ l(100);     // displays 100
 
 ## 268. Stateless Lambda Expressions
 
+```c++
+[] () { std::cout << "Hi";}();
+
+[] (int x) { std::cout << "Hi";}(100);
+```
+
+```c++
+const int n {3};
+int nums[n] {10,20,30};
+
+auto sum = [] (int nums[], int n) {
+    int sum {0};
+    for (int i = 0; i < n; i++)
+        sum += nums[i];
+    return sum;
+};
+
+std::cout << sum(nums, 3)
+```
+
+### Using lambda expressions as function parameters
+```c++
+#include <functional>
+
+void foo(std::function<void(int)> l) {
+    l(10)
+}
+
+OR
+
+void foo(void (*l)(int)) {
+    l(10);
+}
+
+OR
+
+void foo(auto l) {
+    l(10)
+}
+```
+
+### Returning lambda expressions from functions
+
+```c++
+std::function<void(int)> foo() {
+    return [] (int x) { std::cout << x; };
+}
+
+OR
+
+void (*foo()) (int) {
+    return [] (int x) { std::cout << x;};
+}
+
+OR
+
+auto foo() {
+    return [] (int x) { std::cout << x; };
+}
+```
+
+```c++
+void print_if(std::vector<int> nums, bool (*predicate)(int)) {
+    for (int i : nums)
+        if (predicate(i))
+            std::cout << i;
+}
+
+int main() {
+    std::vector<int> nums {1, 2, 3};
+    
+    print_if(nums, [] (auto x) { return x % 2 == 0; };);
+    print_if(nums, [] (auto x) { return x % 2 != 0; };);
+    return 0;
+}
+```
+* predicate lambda passes as a function pointer
+* a predicate is a c++ function that takes any number of arguments and returns
+a boolean value. So, naturally it follows that a predicate lambda is a lambda that implements this function.
+* predicate lambdas are extremely important when using the standard template library functions and algorithms such as `sort` of `for_each` which require a predicate parameter.
 ***
 
 ## 269. Stateless Lambda Expression Demo - Part 1
