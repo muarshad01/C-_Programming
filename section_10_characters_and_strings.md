@@ -62,6 +62,26 @@ strcmp(str, "Another");  // > 0
 
 ## 97. C++ Strings
 
+```c++
+#include <string>
+using namespace std;
+
+string s1;                  // Empty
+string s2 {"Frank"};        // Frank
+string s3 {s2};             // Frank
+string s4 {"Frank", 3};     // Fra
+string s5 {s3, 0, 2};       // Fr
+string s6 (3, 'X');         // XXX
+```
+
+```c++
+string s1;
+s1 = "C++ Rocks!";
+
+string s2 {"Hello"};
+s2 = s1;                // s2 will contain a copy of s1
+```
+
 ***
 
 ## 98. Working with C++ Strings
