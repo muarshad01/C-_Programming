@@ -1,5 +1,16 @@
 ## 265. Section Overview
 
+* What is lambda expression?
+    - Motivation
+    - Review of function objects (functors)
+    - Relation between lambdas and function objects
+
+* Structure of lambda expression
+* Types of lambda expressions
+    - Stateless lambda expression
+    - Stateful lambda expression (capturing context)
+* Lambdas and the STL
+
 ***
 
 ## 266. Motivation
