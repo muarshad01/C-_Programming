@@ -29,11 +29,11 @@ public:
         return num * n;
     }
 };
+```
 
 * overloaded function called `operator()`
 * whenever this operator `()` is used, the function associated with this 
 operator `()` is called for an object of any Multiplier type.
-```
 
 ```c++
 std::vector<int> vec {1,2,3,4};
