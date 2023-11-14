@@ -181,10 +181,13 @@ int main() {
     return 0;
 }
 ```
-* predicate lambda passes as a function pointer
-* a predicate is a c++ function that takes any number of arguments and returns
-a boolean value. So, naturally it follows that a predicate lambda is a lambda that implements this function.
-* predicate lambdas are extremely important when using the standard template library functions and algorithms such as `sort` of `for_each` which require a predicate parameter.
+
+* A predicate lambda (or lambda) passed as a function pointer
+
+* a predicate is a C++ function that takes any number of arguments and returns a boolean value. So, naturally it follows that a predicate lambda is a lambda that implements this function.
+
+* predicate lambdas are extremely important when using the STL functions and algorithms such as `sort` of `for_each`, which require a predicate parameter.
+
 ***
 
 ## 269. Stateless Lambda Expression Demo - Part 1
