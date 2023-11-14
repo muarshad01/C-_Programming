@@ -164,6 +164,8 @@ auto foo() {
 }
 ```
 
+### Using lambda expressions as predicates
+
 ```c++
 void print_if(std::vector<int> nums, bool (*predicate)(int)) {
     for (int i : nums)
