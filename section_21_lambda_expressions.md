@@ -200,6 +200,8 @@ int main() {
 
 ## 271. Stateful Lambda Expressions
 
+xxx
+
 ***
 
 ## 272. Stateful Lambda Expressions Demo - Part 1
@@ -213,5 +215,3 @@ int main() {
 ## 274. Lambdas and the STL
 
 ***
-
-

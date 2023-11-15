@@ -20,7 +20,7 @@
 * [Section 11: Functions](https://github.com/muarshad01/CPP_Programming/blob/main/section_11_functions.md) -- 11/01/2023
 * [Section 12: Pointers and References](https://github.com/muarshad01/CPP_Programming/blob/main/section_12_pointers_and_references.md) -- 11/02/2023
 
-## PART-2
+## PART-2 (OOP)
 
 * [Section 13: OOP - Classes and Objects](https://github.com/muarshad01/CPP_Programming/blob/main/section_13_oop_classes_and_objects.md) -- 11/06/2023
 * [Section 14: Operator Overloading](https://github.com/muarshad01/CPP_Programming/blob/main/section_14_operator_overloading.md) -- Nov. 13, 2023
