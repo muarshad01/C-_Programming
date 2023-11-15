@@ -244,22 +244,6 @@ int x {100};
 
 [x] () { std::cout << x; };     // Displays 100
 ```
-* value captured by value is actually being captured by `const` value so it won't be modificable 
-within the Lambda
-* What if we want to capture the variable by value and modify it within the Lambda?
-
-```c++
-int x {100};
-
-[x] () mutable {
-    x += 100;
-    std::cout << x;     // Displays 200
-}();
-
-std::cout  << x;        // Displays 100
-```
-
-
 ***
 
 ## 272. Stateful Lambda Expressions Demo - Part 1
