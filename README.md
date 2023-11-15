@@ -33,7 +33,7 @@
 * [Section 18: Exception Handling](https://github.com/muarshad01/CPP_Programming/blob/main/section_18_exception_handling.md) -- Nov. 12, 2023
 * [Section 19: I/O and Streams](https://github.com/muarshad01/CPP_Programming/blob/main/section_19_io_and_streams.md) -- Nov. 12, 2023
 * [Section 20: The Standard Template Library (STL)](https://github.com/muarshad01/CPP_Programming/blob/main/section_20_STL.md) -- Nov. 11, 2023
-* [Section 21: Lambda Expressions]()
+* [Section 21: Lambda Expressions](https://github.com/muarshad01/CPP_Programming/blob/main/section_21_lambda_expressions.md) -- Nov. 15, 2023
 * [Section 22: Using VSCode](https://github.com/muarshad01/CPP_Programming/blob/main/section_22_Using_VSCode.md) -- 10/28/2023
 * [Section 23: Enumerations]()
 
