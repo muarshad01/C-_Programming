@@ -67,7 +67,8 @@ $ g++
 
 ### Check if compiler is installed
 ```        
-$ clang --version
+$ clang --version        # MacOS
+$ g++ --version          # Windows
 ```
 
 ```
