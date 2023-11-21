@@ -149,6 +149,9 @@ This will create `{} launch.json` file. Edit and update it as follows:
 }
 ```
 
+* `main.cpp` -> Launch `Run and Debug` -> Click on a particular code-line # 
+-> Run `g++ - Build and debug active file` -> step-over -> STOP
+
 ***
 
 ## Other
@@ -156,9 +159,3 @@ This will create `{} launch.json` file. Edit and update it as follows:
 ```
 $ g++ --std=c++11 hello.cpp
 ```
-
-
-* `main.cpp` -> Launch `Run and Debug` -> Click on a particular code-line # 
--> Run `g++ - Build and debug active file` -> step-over -> STOP
-
-***
