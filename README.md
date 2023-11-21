@@ -57,15 +57,8 @@ $ g++
 
 ***
 
-## `VSCode` Extensions for `C++`
 
-* [Run C++ and C in Visual Studio Code](https://www.youtube.com/watch?v=3-9sObAg6R0)
-* [How to Run C++ in VSCode on MacOS](https://www.youtube.com/watch?v=tdAD0WZjXrM)
-    - Open `VSCode`, we need to install TWO extensions:
-      - Extensions -> search c/c++ -> Install `C/C++ IntelliSense` 
-      - Extensions -> search code codelldb -> Install `CodeLLDB (Code Runner)`
-
-### Check if compiler is installed
+### Check if compiler is installed on MaxOS
 ```        
 $ clang --version        # MacOS
 $ g++ --version          # Windows
@@ -83,13 +76,17 @@ $ gcc -> clang: error: no input files
 $ g++ -> clang: error: no input files
 ```
 
-Otherwise, install using: `$ xcode-select --install` 
+* Otherwise, install using: `$ xcode-select --install` 
 
 ***
 
-```
-$ g++ --std=c++11 hello.cpp
-```
+## `VSCode` Extensions for `C++`
+
+* [Run C++ and C in Visual Studio Code](https://www.youtube.com/watch?v=3-9sObAg6R0)
+* [How to Run C++ in VSCode on MacOS](https://www.youtube.com/watch?v=tdAD0WZjXrM)
+    - Open `VSCode`, we need to install TWO extensions:
+      - Extensions -> search c/c++ -> Install `C/C++ IntelliSense` 
+      - Extensions -> search code codelldb -> Install `CodeLLDB (Code Runner)`
 
 ***
 
@@ -151,6 +148,15 @@ This will create `{} launch.json` file. Edit and update it as follows:
     ]
 }
 ```
+
+***
+
+## Other
+
+```
+$ g++ --std=c++11 hello.cpp
+```
+
 
 * `main.cpp` -> Launch `Run and Debug` -> Click on a particular code-line # 
 -> Run `g++ - Build and debug active file` -> step-over -> STOP
