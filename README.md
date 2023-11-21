@@ -39,6 +39,12 @@
 
 ***
 
+## Install MinGW for Windows
+
+* Goto [https://winlibs.com](https://winlibs.com)
+
+***
+
 ## `VSCode` Extensions for `C++`
 
 * [Run C++ and C in Visual Studio Code](https://www.youtube.com/watch?v=3-9sObAg6R0)
