@@ -41,7 +41,9 @@
 
 ## Install MinGW for Windows
 
-* Goto [https://winlibs.com](https://winlibs.com)
+* Goto [https://winlibs.com](https://winlibs.com) -> Downloads
+
+* Press `Windows-Key` -> `Type Control Panel` -> System and Security -> System -> View amount of RAM and processor Speed -> System type: 64-bit operating system, x64-based processor
 
 ***
 
