@@ -47,7 +47,13 @@
     - Download `Zip Archive`
     - Extract .zip file to `C:\`
     - Copy `C:\mingw64\bin` to PATH
-    - 
+```
+$ g++ --version
+```
+
+```
+$ g++
+```
 
 ***
 
