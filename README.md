@@ -53,7 +53,7 @@
 * [How to Run C++ in VSCode on MacOS](https://www.youtube.com/watch?v=tdAD0WZjXrM)
     - Open `VSCode`, we need to install TWO extensions:
         - 1. Extensions -> search c/c++ -> Install `C/C++ IntelliSense` 
-        - 2. Extensions -> search code codelldb -> Install `CodeLLDB`
+        - 2. Extensions -> search code codelldb -> Install `CodeLLDB (Code Runner)`
 
 ### Check if compiler is installed
 ```        
