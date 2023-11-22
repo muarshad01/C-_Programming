@@ -1,5 +1,9 @@
 ## 25. Section Overview
 
+* The scope resolution (`::`) operator 
+* The stream insertion (`<<`) operator 
+* The stream extraction (`>>`) operator
+
 ***
 
 ## 26. Overview of the CodeLite Interface
