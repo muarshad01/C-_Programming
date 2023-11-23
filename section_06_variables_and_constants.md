@@ -22,7 +22,7 @@ int age = 21;       // C-like initialization
 
 int age = (21)      // Constructor initialization
 
---> int age {21};  // C++11 list initialization style
+--> int age {21};  // C++11 list-initialization style
 ```
 
 ***
