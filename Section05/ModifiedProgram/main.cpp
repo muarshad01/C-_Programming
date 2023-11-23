@@ -1,16 +1,15 @@
 #include <iostream>
 
-int main()
-{
-   int favorite_number;   
-    
-   std::cout << "Enter your favorite number between 1 and 100: ";
+using namespace std;
 
-   std::cin >> favorite_number;       
-   
-   std::cout << "Amazing!! That's my favorite number too!" << std::endl;
-    
-   std::cout << "No really!!, " << favorite_number << " is my favorite number!" << std::endl;
-    
+// main() method: The program starts here
+int main() {
+   int x;
+
+   cout << "Enter a value between 1 and 100: ";
+   cin >> x;
+   cout << "Amazing!! That's my favorite number too!" << endl;
+   cout << "Really!!, " << x << " is my favorite number!" << endl;
+
    return 0;
 }

@@ -1,12 +1,14 @@
 #include <iostream>
 
-int main() 
-{
-    int favorite_number;
-    
-    std::cout << "Enter your favorite number between 1 and 100: ";
-    std::cin >> favorite_number;
-    std::cout << "Amazing!! That's my favorite number too!" << std::endl;
-    
+using namespace std;
+
+int main() {
+
+    int num;
+
+    cout << "Enter a number" << endl;
+    cin >> num;
+    cout << "You entered " << num << endl;
+
     return 0;
 }

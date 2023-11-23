@@ -1,24 +1,24 @@
 #include <iostream>
 
-// This is a comment
+using namespace std;
 
-/* This is a multiple
-        line
-         comment
-*/
-
-// Using a modified version Dijkstra's algorithm to improve space efficiency
-
+// main() method: The program starts here
 int main()
- {    
-    int favorite_number;  // this is where my favorite number is stored
-    
-    std::cout << "Enter your favorite number between 1 and 100: ";
+{
+   /*
+   int num;
+   num = 10;
+   */
+   int num {10};
 
-    std::cin >> favorite_number;    /* comment */  
-    
-    std::cout << "Amazing!! That's my favorite number too!" << std::endl;
-    std::cout << "No really!!, " << favorite_number << " is my favorite number!" << std::endl;
-    
-    return 0;  // return 0
- }
+   cout << "The value of number is " << num << endl;
+
+   //std::cout << "Enter your favorite number between 1 and 100: " << std::endl;
+
+   //std::cin >> num; /* comment */
+
+   //std::cout << "Amazing!! That's my favorite number too!" << std::endl;
+   //std::cout << "No really!!, " << num << " is my favorite number!" << std::endl;
+
+   return 0; // Successful: return 0
+}
