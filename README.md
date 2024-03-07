@@ -159,3 +159,9 @@ This will create `{} launch.json` file. Edit and update it as follows:
 ```
 $ g++ --std=c++11 hello.cpp
 ```
+***
+
+## C++ Concurrency Course
+* [Modern C++ Concurrency in Depth ( C++17/20)](https://www.udemy.com/course/modern-cpp-concurrency-in-depth/?couponCode=ST12MT030524)
+
+***
