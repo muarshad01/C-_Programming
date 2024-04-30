@@ -82,6 +82,18 @@ int main() {
 
 ## 138. Accessing Class Members
 
+```c++
+Account *account = new Account();
+
+// Dereference the pointer then use the dot operator
+(*account).balance
+(*account).deposit(1000.00)
+
+// Or use the member of pointer operator (arrow operator)
+account->balance
+account->deposit(1000.00)
+```
+
 ***
 
 ## 139. public and private
