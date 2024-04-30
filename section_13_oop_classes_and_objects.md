@@ -37,7 +37,7 @@ int main() {
     player_vec.push_back(hero);
 
     // creating an object dynamically on `HEAP MEMORY` using the 'new' operator
-    Player *enemy{nullptr};
+    Player *enemy {nullptr};
     enemy = new Player;       
 
     // When you're finished using enemy object, its storage has to be freed up using 'delete'
@@ -67,12 +67,14 @@ int main() {
     // An array of Account objects
     Account accounts [] {frank_account, jim_account};   
 
-    Account *mary_account = new Account();
+    Account *mary_account {nullptr};
+    mary_account = new Account();
+
     delete mary_account;
 
     // standard vector of account objects
-    std::vector<Account> accounts1 {frank_account};     
-    accounts1.push_back(jim_account);
+    std::vector<Account> account_vec {frank_account};     
+    account_vec.push_back(jim_account);
 }
 ```
 
