@@ -15,9 +15,9 @@
 ```c++
 class Player {
     // attributes
-    std::string name;
-    int health;
-    int xp;
+    std::string name {"Player"};
+    int health {100};
+    int xp {3};
 
     // methods
     void talk(std::string text_to_say);
@@ -50,8 +50,8 @@ int main() {
 ```c++
 class Account {
     // attributes
-    std::string name;
-    double balance;
+    std::string name {"Account"};
+    double balance {0.0};
 
     // methods
     bool withdraw(double amount);
@@ -60,18 +60,20 @@ class Account {
 ```
 
 ```c++
-Account frank_account;
-Account jim_account;
+int main() {
+    Account frank_account;
+    Account jim_account;
 
-// An array of Account objects
-Account accounts [] {frank_account, jim_account};   
+    // An array of Account objects
+    Account accounts [] {frank_account, jim_account};   
 
-Account *mary_account = new Account();
-delete mary_account;
+    Account *mary_account = new Account();
+    delete mary_account;
 
-// standard vector of account objects
-std::vector<Account> accounts1 {frank_account};     
-accounts1.push_back(jim_account);
+    // standard vector of account objects
+    std::vector<Account> accounts1 {frank_account};     
+    accounts1.push_back(jim_account);
+}
 ```
 
 ***
