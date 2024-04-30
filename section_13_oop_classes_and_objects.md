@@ -26,15 +26,25 @@ class Player {
 ```
 
 ```c++
-// `local objects` are created on `STACK MEMORY`.
-Player frank;
-Player hero;
+int main() {
+    // `local objects` are created on `STACK MEMORY`.
+    Player frank;
+    Player hero;
 
-// creating an object dynamically on `HEAP MEMORY` using the 'new' operator
-Player *enemy = new Player();       
+    Player players[] = {frank, hero};
 
-// When you're finished using enemy object, its storage has to be freed up using 'delete'
-delete enemy;                       
+    vector<Player> player_vec{frank};
+    player_vec.push_back(hero);
+
+    // creating an object dynamically on `HEAP MEMORY` using the 'new' operator
+    Player *enemy{nullptr};
+    enemy = new Player;       
+
+    // When you're finished using enemy object, its storage has to be freed up using 'delete'
+    delete enemy;
+
+    return 0;
+}                   
 ```
 
 ```c++
