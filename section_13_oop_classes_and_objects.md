@@ -67,14 +67,14 @@ int main() {
     // An array of Account objects
     Account accounts [] {frank_account, jim_account};   
 
+    // standard vector of account objects
+    std::vector<Account> account_vec {frank_account};     
+    account_vec.push_back(jim_account);
+
     Account *mary_account {nullptr};
     mary_account = new Account();
 
     delete mary_account;
-
-    // standard vector of account objects
-    std::vector<Account> account_vec {frank_account};     
-    account_vec.push_back(jim_account);
 }
 ```
 
