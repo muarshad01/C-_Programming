@@ -20,7 +20,7 @@ class Player {
     int xp;
 
     // methods
-    void talk(std::string to_to_say);
+    void talk(std::string text_to_say);
     bool is_dead();
 };
 ```
