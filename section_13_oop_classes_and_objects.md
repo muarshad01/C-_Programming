@@ -94,6 +94,14 @@ account->balance
 account->deposit(1000.00)
 ```
 
+```c++
+Player *enemy = new Player
+(*enemey).name = "Enemy";
+(*enemey).health = 100;
+enemey->xp = 15;
+
+enemey->talk("I will destroy you!"); 
+```
 ***
 
 ## 139. public and private
