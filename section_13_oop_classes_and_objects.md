@@ -26,12 +26,15 @@ class Player {
 ```
 
 ```c++
+// `local objects` are created on `STACK MEMORY`.
 Player frank;
 Player hero;
 
-Player *enemy = new Player();       // creating an object dynamically on head using `new`
+// creating an object dynamically on `HEAP MEMORY` using the 'new' operator
+Player *enemy = new Player();       
 
-delete enemy;                       // When I'm finished using enemy object, its storage has to be freed up using `delete`
+// When you're finished using enemy object, its storage has to be freed up using 'delete'
+delete enemy;                       
 ```
 
 ```c++
@@ -50,12 +53,14 @@ class Account {
 Account frank_account;
 Account jim_account;
 
-Account accounts [] {frank_account, jim_account};   // An array of Account objects
+// An array of Account objects
+Account accounts [] {frank_account, jim_account};   
 
 Account *mary_account = new Account();
 delete mary_account;
 
-std::vector<Account> accounts1 {frank_account};     // standard vector of account objects
+// standard vector of account objects
+std::vector<Account> accounts1 {frank_account};     
 accounts1.push_back(jim_account);
 ```
 
@@ -80,7 +85,7 @@ accounts1.push_back(jim_account);
     - Implicitly inline
 
 * Can be implemented outside the class declaration
-    - Need to use Class_name::method_name
+    - Need to use `Class_name::method_name`
 
 * Can separate specification from implementation
     - `.h` file for the class declaration
@@ -102,14 +107,14 @@ private:
 public:
     // methods
     // declared IN-LINE
-    void   set_balance(double bal) { balance = bal; }
+    void set_balance(double bal) { balance = bal; }
     double get_balance() { return balance; }
 
     // methods will be declared OUTSIDE the class declaration
-    void   set_name(std::string n);
+    void set_name(std::string n);
     string get_name();
     
-    bool  deposit(double amount);
+    bool deposit(double amount);
     bool withdraw(double amount);
 };
 
@@ -156,10 +161,10 @@ double Account::withdraw(double amount) {
 
 ### Destructors
 
-* Same name as the class proceeded with a tilde(`~`)
+* Same name as the class proceeded with a tilde (`~`)
 * Invoked automatically when an object is destroyed
 * No return type and no parameters
-* On 1 destructor is allowed per class - cannot be overloaded!
+* Only `1` destructor is allowed per class - cannot be overloaded!
 * Useful to release memory and other resources
 
 ```c++
@@ -185,7 +190,7 @@ public:
     Player villain {"Villain"};
 }   // 4 destructor are called
 ```
-* All of above 4 objects are local objects and they'll be created on STACK.
+* All of above 4 objects are `local objects` and they'll be created on `STACK`.
 * When the block `{}` ends, these objects go out-of-scope and their destructure will be called automatically.
 
 ```c++
