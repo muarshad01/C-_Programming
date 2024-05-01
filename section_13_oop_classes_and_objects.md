@@ -146,17 +146,17 @@ delete enemy;
 
 * Very similar to how we implemented functions
 
-* Member methods have access to member attributes
-    - So you don't need to pass them as arguments!
+* `Member methods (instance methods)` have access to `member attributes (instance attributes)`
+    - So you don't need to pass them as arguments
 
 * Can be implemented inside the class declaration
-    - Implicitly inline
+    - `Implicitly inline`
 
 * Can be implemented outside the class declaration
-    - Need to use `Class_name::method_name`
+    - Need to use `ClassName::method_name`
 
-* Can separate specification from implementation
-    - `.h` file for the class declaration
+* Can separate `specification` from `implementation`
+    - `.h`  file for the class declaration
     - `cpp` file for the class implementation
 
 File `Account.h` has **specification**:
