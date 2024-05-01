@@ -493,6 +493,21 @@ Player::Player(std::string name_val, int health_val, int xp_val)
 
 ## 146. Constructor Parameters and Default Values
 
+
+```c++
+class Player {
+private:
+    std::string name;
+    int health;
+    int xp;
+public:
+    // constructor with default parameter value
+    Player(std::string name = "None",
+        int health = 0,
+        int xp = 0);
+};
+```
+
 ***
 
 ## 147. Copy Constructor
