@@ -173,12 +173,11 @@ private:
     double balance;
 
 public:
-    // methods
-    // declared IN-LINE
+    // methods declared IN-LINE
     void set_balance(double bal) { balance = bal; }
     double get_balance() { return balance; }
 
-    // methods will be declared OUTSIDE the class declaration
+    // methods to be declared OUTSIDE the class declaration
     void set_name(std::string n);
     string get_name();
     
