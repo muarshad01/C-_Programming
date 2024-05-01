@@ -113,6 +113,32 @@ enemey->talk("I will destroy you!");
 * `protected`
     * used with inheritence
 
+```c++
+class Player {
+private:
+    // attributes
+    std::string name;
+    int health;
+    int xp;
+public:
+    // methods
+    void talk(std::string text_to_say);
+    bool is_dead();
+};
+```
+
+```c++
+Player frank;
+frank.name = "Frank";            // compiler error
+frank.healt = 1000;              // compiler error
+frank.talk("Ready to battle")    // ok
+
+Player *enemy = new Player();
+enemy-> = 100;                  // compiler error
+enemy->talk("Hello");           // ok
+
+delete enemy;
+```
 
 ***
 
