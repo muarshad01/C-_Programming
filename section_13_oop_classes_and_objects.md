@@ -173,9 +173,14 @@ private:
     double balance;
 
 public:
-    // methods declared IN-LINE
-    void set_balance(double bal) { balance = bal; }
-    double get_balance() { return balance; }
+    // methods declared INLINE
+    void set_balance(double bal) {
+        balance = bal;
+    }
+
+    double get_balance() {
+        return balance;
+    }
 
     // methods to be declared OUTSIDE the class declaration
     void set_name(std::string n);
@@ -209,7 +214,7 @@ bool Account::deposit(double amount) {
 }
 
 double Account::withdraw(double amount) {
-    if(balance-amount >= 0) {
+    if(balance - amount >= 0) {
         balance -= amount;
         return true;
     } else {
