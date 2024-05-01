@@ -588,7 +588,7 @@ Account::Account(const Account &source)
 
 * Consider a class that contains a pointer as a data member
 * Constructor allocates storage dynamically and initialized the pointer
-* Destructor allocates the memory allocated by the constructor
+* Destructor releases the memory allocated by the constructor
 * What happens in the default copy constructor
 
 ### Default copy constructor
@@ -598,14 +598,28 @@ Account::Account(const Account &source)
 * **PROBLEM**: When we release the storage in the destructor, the other object still refers to the released storage.
 
 ```c++
-class Shallow {
+class Shallow
+{
 private:
-    int *data;
+    int *data;                          // Pointer
 public:
     Shallow(int d);                     // Constructor
     Shallow(const Shallow &source);     // COPY Constructor
     ~Shallow();                         // Destructor
 };
+```
+
+```c++
+Shallow::Shallow(int d) {
+    data = new int;                    // allocate storage
+    *data = d;
+}
+```
+
+```c++
+Shallow::~Shallow() {
+    delete data;                       // free storage
+}
 ```
 
 ***
