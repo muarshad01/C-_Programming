@@ -655,7 +655,6 @@ Deep::~Deep() {
 }
 ```
 
-### Copy Constructor
 ```c++
 Deep::Deep(const Deep &source) {
     data = new int;                 // allocate storage
