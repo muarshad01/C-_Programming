@@ -298,9 +298,9 @@ public:
 ## 142. The Default Constructor
 
 * Doesn't expect any arguments
-    - Also called no-args constructor
+    - Also called `no-args constructor`
 * If you write no constructor at all for a class
-    - C++ will generate a Default Constructor that does nothing
+    - C++ will generate a `Default Constructor` that does nothing
 * Called when you instantiate a new object with no arguments
 ```c++
 Player frank;
@@ -315,17 +315,17 @@ private:
     double balance;
 public:
     bool withdraw(double amount);
-    bool  deposit(double amount);
+    bool deposit(double amount);
 };
 ```
 
 ```c++
-// creating two local objects frank_account and jim_account
+// creating two LOCAL OBJECTS (on STACK) frank_account and jim_account
 Account frank_account;
-Account   jim_account;
+Account jim_account;
 
 Account *mary_account = new Account;
-delete   mary_account;
+deletecmary_account;
 ```
 
 ### User-defined no-args constrcutor
@@ -340,7 +340,7 @@ public:
         balance = 0.0;
     }
     bool withdraw(double amount);
-    bool  deposit(double amount);
+    bool deposit(double amount);
 };
 ```
 
@@ -356,17 +356,17 @@ public:
         balance = bal;
     }
     bool withdraw(double amount);
-    bool  deposit(double amount);
+    bool deposit(double amount);
 };
 ```
 
 ```c++
-// creating two local objects frank_account and jim_account
+// creating two LOCAL OBJECTS frank_account and jim_account
 Account frank_account;                      // Error
-Account   jim_account;                      // Error
+Account jim_account;                        // Error
 
 Account *mary_account = new Account;        // Error
-delete   mary_account;
+delete mary_account;
 
 Account bill_account {"Bill", 15000.0};     // OK
 ```
