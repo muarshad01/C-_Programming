@@ -515,13 +515,13 @@ public:
 * When objects are copied C++ must create a new object from an existing object
 
 * When is a copy of an object made
-    - passing object by value as a parameter
-    - returning an object from a function by value
-    - constructing one object based on another of the same class
+    - 1 passing object by value as a parameter
+    - 2 returning an object from a function by value
+    - 3 constructing one object based on another of the same class
 
 * C++ must have a way of accomplishing this so it provides a compiler-defined copy constructor if you don't
 
-### Pass object by-value
+### 1 Passing object by value as a parameter
 ```c++
 Player hero {"Hero", 100, 20};
 
@@ -533,7 +533,7 @@ void display_player(Player p) {
 
 display_player(hero);
 ```
-
+### 2. Returning an object from a function by value
 ```c++
 Player enemy;
 
@@ -545,6 +545,7 @@ Player create_super_enemy() {
 enemy = create_super_enemy();
 ```
 
+### 3 constructing one object based on another of the same class
 ```c++
 Player hero {"Hero", 100, 100};
 
@@ -554,13 +555,13 @@ Player another_hero {hero};     // A COPY of hero is made
 * Beware if you have a pointer data member
     - Pointer will be copied
     - Not what it is pointing to
-    - Shallow vs. Deep copy - more in the next video
+    - `Shallow versus Deep copy` - more in the next video
 
 ### Best practices
-* Provide a copy constructor when your class has raw pointer members
+* Provide a copy constructor when your class has raw-pointer-data-members
 * Provide the copy constructor with a `const` reference parameter
 * USE STL classes as they already provide copy constructors
-* Avoid using raw pointer data members if possible
+* Avoid using raw-pointer-data-members if possible
 
 ```c++
 Type::Type(const Type &source);
@@ -570,16 +571,14 @@ Account::Account(const Account & Account)
 
 ```c++
 Player::Player(const Player &source) 
-    : name{source.name},
-      health {source.health}, 
-      xp : {source.xp} {
+    : name{source.name}, health{source.health}, xp{source.xp} {
+    // : Player {source.name, source.health, source.xp} {
 }
 ```
 
 ```c++
 Account::Account(const Account &source) 
-    : name{source.name},
-      balance {source.balance} {
+    : name{source.name}, balance{source.balance} {
 }
 ```
 
