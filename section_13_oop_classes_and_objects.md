@@ -227,16 +227,19 @@ double Account::withdraw(double amount) {
 
 ## 141. Constructor and Destructors
 
+* Special member method
+* Invoked during `object creation`
+* Useful for initialization
 * Same name as the class
 * No return type is specified
 * Can be overloaded
 
 ### Destructors
 
-* Same name as the class proceeded with a tilde (`~`)
-* Invoked automatically when an object is destroyed
+* Same name as the class preceeded with a tilde (`~`)
+* Invoked automatically when an `object is destroyed`
 * No return type and no parameters
-* Only `1` destructor is allowed per class - cannot be overloaded!
+* Only `1` destructor is allowed per class - `cannot be overloaded`
 * Useful to release memory and other resources
 
 ```c++
@@ -246,9 +249,11 @@ private:
     int health;
     int xp;
 public:
+    // Overloaded Constructors
     Player();
     Player(std::string name);
     Player(std::string name, int health, int xp);
+
     // Destructor
     ~Player();
 };
@@ -260,14 +265,32 @@ public:
     Player frank {"Frank", 100, 4};
     Player hero {"Hero"};
     Player villain {"Villain"};
-}   // 4 destructor are called
+    // use the 4 objects
+} // 4 destructor are called
 ```
-* All of above 4 objects are `local objects` and they'll be created on `STACK`.
-* When the block `{}` ends, these objects go out-of-scope and their destructure will be called automatically.
+* All of above 4 objects are `LOCAL OBJECTS` and they'll be created on `STACK`.
+* When the block `{...}` ends, these objects go out-of-scope and their destructor will be called automatically.
 
 ```c++
 Player *enemy = new Player("Enemy", 100, 0);
 delete enemy;   // destructor called
+```
+
+```c++
+class Account {
+private:
+    std::string name;
+    double balance;
+public:
+    // Constructors
+    Accout();
+    Account(std::string name);
+    Account(double balance);
+    Account(std::string name, double balance);
+
+    // Destructor
+    ~Account();
+};
 ```
 
 ***
