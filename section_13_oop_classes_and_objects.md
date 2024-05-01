@@ -106,6 +106,14 @@ enemey->talk("I will destroy you!");
 
 ## 139. public and private
 
+* `public`
+    * accessible everywhere
+* `private`
+    * accessible only by members or friends of the class
+* `protected`
+    * used with inheritence
+
+
 ***
 
 ## 140. Implementing Member Methods
