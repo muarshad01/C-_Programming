@@ -95,6 +95,18 @@ cout << *score_ptr << endl;     // 200
 cout << score << endl;          // 200
 ```
 
+```c++
+int score {10};
+double high_temp {100.7};
+
+int *score_ptr {nullptr};
+
+score_ptr = &score;            // OK
+
+score_ptr = &high_temp;        // Compiler Error
+```
+
+
 ***
 
 ## 121. Dynamic Memory Allocation
