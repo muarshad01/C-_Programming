@@ -440,13 +440,13 @@ for (auto &str : stooges) {         // Notice `&str`
 }
 
 for (auto str : stooges) {
-    cout << str << endl;            // Funny, Funny, Funny
+   cout << str << endl;            // Funny, Funny, Funny
 }
 ```
 
 ```c++
 for (auto const &str : stooges) {   // Notice `const` keyword
-    str = "Funny";                  // Now the `vector` elements have changed
+    str = "Funny";                  // compiler error
 }
 ```
 ***
@@ -480,46 +480,3 @@ square(num);        // OK
 ## 133. Section Challenge - Solution
 
 ***
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
