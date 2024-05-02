@@ -779,6 +779,7 @@ Player::~Player() {
 
 ```c++
 class Person {
+    // by default class members are private
     std::string name;
     std::string get_name();
 };
