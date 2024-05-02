@@ -53,8 +53,11 @@ cout << "Address of num is: " << &num << endl;          // 0x61ff1c
 
 ```c++
 int *p;
+
 cout << "Value of p is: " << p << endl;                 // 0x61ff60 - garbage
+
 cout << "Address of p is: " << &p << endl;              // 0x61ff18
+
 cout << "sizeof p is: " << sizeof(p) << endl;           // 4
 
 p = nullptr;                                            // set `p` to point nowhere
