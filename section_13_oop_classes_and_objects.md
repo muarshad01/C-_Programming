@@ -779,8 +779,8 @@ class Person {
 };
 
 Person p;
-p.name = "Frank";               // compiler error
-std::cout << p.get_name();      // compiler error
+p.name = "Frank";               // compiler error - private
+std::cout << p.get_name();      // compiler error - private
 ```
 
 ```c++
