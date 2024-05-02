@@ -728,6 +728,41 @@ public:
 
 ## 153. Static Class Members
 
+```c++
+class Player {
+private:
+    static int num_players;
+
+public:
+    static int get_number_of_players();
+    ...
+}
+```
+
+```c++
+#include "Player.h"
+int Player::numb_players = 0;
+```
+
+```c++
+Player::get_number_of_players() {
+    return num_players;
+}
+```
+
+```c++
+Player::Player(std::string name_val, int health_val, int xp_val)
+    : name {name_val}, health {health_val}, xp {xp_val} {
+        ++num_players;
+    }
+```
+
+```c++
+Player::~Player() {
+    --num_players;
+}
+```
+
 ***
 
 ## 154. Structs vs Classes
