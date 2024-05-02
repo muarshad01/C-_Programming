@@ -692,7 +692,7 @@ Deep::Deep(const Deep &source)
 
 * Pass arguments to class member methods as `const`
 * We can also create `const` objects
-* What happens if we call member functions on `const` objects?
+* What happens if we call member methods on `const` objects?
 * `const`-correctness
 
 ```c++
