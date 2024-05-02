@@ -185,19 +185,19 @@ OR
 ```
 
 ```c++
-int scores[]{100, 95, 89, 68, -1};
+int scores[] {100, 95, 89, 68, -1};
 int *score_ptr {scores}
 
-while(*score_ptr != -1) {
-    cout << *score_ptr << endl;
-    score_ptr++;
+while (*score_ptr != -1) {
+   cout << *score_ptr << endl;
+   score_ptr++;
 }
 
 cout << "\n-----------" << endl;
 
 score_ptr = scores;
-while(*score_ptr != -1) {
-    cout << *score_ptr++ << endl;
+while (*score_ptr != -1) {
+   cout << *score_ptr++ << endl;
 }
 ```
 
