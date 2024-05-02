@@ -804,7 +804,7 @@ std::cout << p.get_name();      // OK - public
 
 ***
 
-## 155. Friends of a class
+## 155. Friends of a class (TODO)
 
 
 ***
