@@ -1,4 +1,6 @@
 ## 116. Section Overview
+* What is a pointer?
+    * A variable whose value is an address
 
 ***
 
