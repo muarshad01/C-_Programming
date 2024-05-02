@@ -674,13 +674,17 @@ Deep::Deep(const Deep &source)
 
 ***
 
-## 150. Move Constructors
+## 150. Move Constructors (TODO)
 
 * R-value reference operator(`&&`)
 
 ***
 
 ## 151. The `this` Pointer
+* `this` is a reserved keyword
+* contains the address of the object - so it's a pointer to the object
+* All member access is done via `this` pointer
+* (*this) can be dereferenced to yield the current object
 
 ***
 
