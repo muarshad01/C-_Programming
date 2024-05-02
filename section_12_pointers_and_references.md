@@ -33,7 +33,11 @@ string *string_ptr {nullptr};
 ```
 
 * Always initialize pointers
-* If you don't initialize a pointer to pint to a variable or function then you should initialize it to `nullptr` to **make it mull**
+* Uninitialized pointers contain garbage data and can point `anywhere`
+* Initializing to zero of `nullptr` represents address zero
+   * implies that the pointer is pointing `nowhere`
+* If you don't initialize a pointer to point to a variable or function then you should initialize it to `nullptr` to **make it null**
+
 ***
 
 ## 119. Accessing the Pointer Address and Storing Address in a Pointer
