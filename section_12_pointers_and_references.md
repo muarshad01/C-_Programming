@@ -69,11 +69,11 @@ cout << "Value of p is: " << p << endl;                 // 0
 * All pointers in a program have the same size
 
 ```c++
-int *p1 {nullptr};
-double *p2 {nullptr};
+int                *p1 {nullptr};
+double             *p2 {nullptr};
 unsigned long long *p3 {nullptr};
-vector<string> *p4 {nullptr};
-string *p5 {nullptr};
+vector<string>     *p4 {nullptr};
+string             *p5 {nullptr};
 ```
 
 * The compiler will make sure that the address stored in a pointer variable is of the correct type
