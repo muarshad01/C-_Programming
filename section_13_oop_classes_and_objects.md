@@ -741,7 +741,8 @@ public:
 
 ```c++
 #include "Player.h"
-int Player::numb_players = 0;
+
+int Player::num_players = 0;
 ```
 
 ```c++
