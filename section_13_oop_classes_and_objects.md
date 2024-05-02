@@ -696,10 +696,10 @@ Deep::Deep(const Deep &source)
 * `const`-correctness
 
 ```c++
+// villain is a const object, so its attributes can't change
 const Player villain {"Villain", 100, 55};
 
 villain.set_name("Nice guy");                   // ERROR
-
 std::cout << villain.get_name() << std::end;    // ERROR
 ```
 
