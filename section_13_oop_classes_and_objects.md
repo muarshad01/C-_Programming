@@ -723,6 +723,10 @@ public:
 };
 ```
 
+```c++
+villain.set_name("Nice guy");                   // ERROR
+std::cout << villain.get_name() << std::end;    // OK
+```
 
 ***
 
