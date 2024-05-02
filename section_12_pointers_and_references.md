@@ -140,7 +140,7 @@ delte int_ptr;              // frees the allocated storage
 int *array_ptr {nullptr};
 size_t size {0};
 
-cout<< "How big do you want the array?";
+cout << "How big do you want the array?";
 cin >> size;
 
 array_ptr = new int[size];      // allocate array on the heap
