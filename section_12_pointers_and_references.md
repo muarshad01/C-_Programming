@@ -260,13 +260,11 @@ const int *const score_ptr = { &high_score };
 void double_data(int *int_ptr);
 
 void double data(int *int_ptr) {
-    *int_ptr *= 2;
+   *int_ptr *= 2;
 }
-```
 
-```c++
 int main() {
-    int value {10};
+   int value {10};
 
     cout << value << endl;      // 10
 
