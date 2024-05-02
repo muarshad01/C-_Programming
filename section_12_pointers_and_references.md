@@ -11,7 +11,7 @@
 ## 118. Declaring Pointers
 
 ```c++
-variable_type *pointer_name;
+variable_type *pointer_name {nullptr};
 ```
 
 ```c++
